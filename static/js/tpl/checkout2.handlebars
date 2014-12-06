@@ -1,0 +1,216 @@
+<!--
+-- Handlebars template engine
+-- Checkout 2 STEP 3  template schema
+-->
+
+<h3 class="block-title">Dados dos Passageiros</h3>
+{{#OUTBOUND}}
+<div class="card-result card-checkout {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}}">
+        
+    <label for="flight-inbound-{{@index}}" class="cf" >
+        
+        <div class="card-flight-info card-flight-info-checkout">
+            <div class="card-flight-header">
+                <div class="card-flight-for">
+                    <span>Ida</span><span>Volta</span>
+                </div>
+                <div class="card-flight-company">
+                    <span>N° do Vôo:</span>
+                    <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                </div>
+                <div class="card-flight-duration-area">
+                    Duração:
+                    <span class="card-flight-duration sort-duration">{{TOTAL_FLIGHT_DURATION}}</span>
+                </div>
+                <div class="card-flight-type-area tipo">
+                    Tipo:
+                    <span class="card-flight-type sort-legs">{{ESCALE}}</span>
+                </div>
+
+                <div class="card-flight-type-area" style="width:9.5em">
+                    Partida:
+                    <span class="card-flight-departure-time sort-origin">{{DEPARTURE_TIME}}</span>
+                </div>
+
+                <div class="card-flight-type-area" style="width:9.5em">
+                    Chegada:
+                    <span class="card-flight-arrival-time sort-destination">{{ARRIVAL_END_TIME}}</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-flight-prices card-flight-prices-checkout" style="width: 57.399em">
+            <table class="card-flight-other-prices-checkout">
+                <tr>
+                    <td class="card-flight-flyer-program card-compare-checkout">
+                        <span class="label">Origem:</span>
+                        <span class="value sort-flyer-points">{{DEPARTURE_LOCATION_NAME}}</span>
+                    </td>
+
+                    <td class="card-flight-flyer-program card-compare-checkout">
+                        <span class="label">Destino:</span>
+                        <span class="value sort-flyer-points">{{ARRIVAL_END_LOCATION_NAME}}</span>
+                    </td>
+
+                    <td class="card-flight-flyer-program card-compare-checkout">
+                        <span class="label">Qtd. Milhas:</span>
+                        <span class="value sort-flyer-points">{{PRICE_MILES}}</span>
+                    </td>
+                </tr>
+                
+                <!--
+                <td class="card-flight-flyer-program card-compare-checkout">
+                    <span class="label">Tarifa</span>
+                    <span class="value sort-flyer-points">R$ {{PRICE_MILHASFACIL}}</span>
+                </td>
+
+                <td class="card-flight-flyer-program card-compare-checkout">
+                    <span class="label">Taxa</span>
+                    <span class="value sort-flyer-points">R$ {{TAX}}</span>
+                </td>
+                <td class="card-flight-flyer-program card-compare-checkout total" style="">
+                    <span class="label">Total:</span>
+                    <span class="value sort-milhas-facil-price">R$ {{PRICE_TOTAL}}</span>
+                </td>
+                -->
+                <div class="clear"></div>
+            </table>
+        </div>
+    </label>
+</div>
+{{/OUTBOUND}}
+
+{{#INBOUND}}
+<div class="card-result card-checkout {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} card-return">
+        
+    <label for="flight-inbound-{{@index}}" class="cf" onclick="pararIntervalo()">
+        
+        <div class="card-flight-info card-flight-info-checkout">
+            <div class="card-flight-header">
+                <div class="card-flight-for">
+                    <span>Ida</span><span>Volta</span>
+                </div>
+                <div class="card-flight-company">
+                    <span>N° do Vôo:</span>
+                    <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                </div>
+                <div class="card-flight-duration-area">
+                    Duração:
+                    <span class="card-flight-duration sort-duration">{{TOTAL_FLIGHT_DURATION}}</span>
+                </div>
+                <div class="card-flight-type-area tipo">
+                    Tipo:
+                    <span class="card-flight-type sort-legs">{{ESCALE}}</span>
+                </div>
+
+                <div class="card-flight-type-area" style="width:9.5em">
+                    Partida:
+                    <span class="card-flight-departure-time sort-origin">{{DEPARTURE_TIME}}</span>
+                </div>
+
+                <div class="card-flight-type-area" style="width:9.5em">
+                    Chegada:
+                    <span class="card-flight-arrival-time sort-destination">{{ARRIVAL_END_TIME}}</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-flight-prices card-flight-prices-checkout" style="width: 57.399em">
+            <table class="card-flight-other-prices-checkout">
+                <tr>
+                    <td class="card-flight-flyer-program card-compare-checkout">
+                        <span class="label">Origem:</span>
+                        <span class="value sort-flyer-points">{{DEPARTURE_LOCATION_NAME}}</span>
+                    </td>
+
+                    <td class="card-flight-flyer-program card-compare-checkout">
+                        <span class="label">Destino:</span>
+                        <span class="value sort-flyer-points">{{ARRIVAL_END_LOCATION_NAME}}</span>
+                    </td>
+
+                    <td class="card-flight-flyer-program card-compare-checkout">
+                        <span class="label">Qtd. Milhas:</span>
+                        <span class="value sort-flyer-points">{{PRICE_MILES}}</span>
+                    </td>
+                </tr>
+                
+                <!--
+                <td class="card-flight-flyer-program card-compare-checkout">
+                    <span class="label">Tarifa</span>
+                    <span class="value sort-flyer-points">R$ {{PRICE_MILHASFACIL}}</span>
+                </td>
+
+                <td class="card-flight-flyer-program card-compare-checkout">
+                    <span class="label">Taxa</span>
+                    <span class="value sort-flyer-points">R$ {{TAX}}</span>
+                </td>
+                <td class="card-flight-flyer-program card-compare-checkout total" style="">
+                    <span class="label">Total:</span>
+                    <span class="value sort-milhas-facil-price">R$ {{PRICE_TOTAL}}</span>
+                </td>
+                -->
+                <div class="clear"></div>
+            </table>
+        </div>
+    </label>
+</div>
+{{/INBOUND}}
+<div id="add-passenger" class="add-passenger default-form">
+    <p class="simple-text">Preencha os dados dos passageiros.</p>
+    {{#PASSENGERS}}
+    <p id="passenger-info-{{@index}}" class="passenger-info">
+        <span class="field-holder ajuste-campo">
+            <input type="text" name="passenger[{{@index}}][NAME]" id="passenger-name[{{@index}}]" placeholder="Nome" required autocomplete="off" class="onfocus" >
+        </span>
+
+        <span class="field-holder ajuste-campo">
+            <input type="email" name="passenger[{{@index}}][EMAIL]" id="passenger-email[{{@index}}]" placeholder="E-mail" required autocomplete="off" >
+        </span>
+
+        <span class="field-holder tamanho identidade">
+            <input type="text" name="passenger[{{@index}}][RG]" id="passenger-rg[{{@index}}]" placeholder="Identidade" required autocomplete="off">
+        </span>
+
+        <span class="field-holder tamanho">
+            <input type="text" name="passenger[{{@index}}][MOBILE]" id="passenger-mobile[{{@index}}]" class="celular-passageiro" placeholder="Celular" required autocomplete="off">
+        </span>
+
+        <span class="field-holder tamanho">
+            <input type="text" name="passenger[{{@index}}][BIRTHDATE]" id="passenger-birth[{{@index}}]" class="data datenormal" placeholder="Nascimento" required autocomplete="off">
+        </span>
+    </p>
+    {{/PASSENGERS}}
+
+    {{#PASSENGERS}}
+    <p id="passenger-info-children-{{@index}}" class="passenger-info passenger-children">
+        <span>Dados passageiro - Criança</span><br>
+        <span class="field-holder ajuste-campo">
+            <input type="text" name="passenger[{{@index}}][NAME]" id="passenger-name-children[{{@index}}]" placeholder="Nome" required autocomplete="off">
+        </span>
+
+        <span class="field-holder ajuste-campo">
+            <input type="email" name="passenger[{{@index}}][EMAIL]" id="passenger-email-children[{{@index}}]" placeholder="E-mail" required autocomplete="off" >
+        </span>
+
+        <span class="field-holder tamanho">
+            <input type="text" name="passenger[{{@index}}][MOBILE]" id="passenger-mobile-children[{{@index}}]" class="celular-passageiro" placeholder="Celular" required autocomplete="off">
+        </span>
+
+        <span class="field-holder tamanho">
+            <input type="text" name="passenger[{{@index}}][BIRTHDATE]" id="passenger-birth-children[{{@index}}]" class="data datenormal" placeholder="Nascimento" required autocomplete="off">
+        </span>
+    </p>
+    {{/PASSENGERS}}
+    
+    <p>
+        <span class="field-holder field-textarea">
+            <textarea type="text" name="passenger-observation" id="passenger-observation" placeholder="Observação" autocomplete="off" ></textarea>
+        </span>
+    </p>
+</div>
+
+<input type="button" name="next" class="next checkout-next" value="Continuar" id="next-step3" />
+<input type="button" name="previous" class="previous checkout-back" value="Voltar" id="prev-step1"/>
+

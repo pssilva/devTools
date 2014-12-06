@@ -1,0 +1,169 @@
+<!--
+-- Handlebars template engine
+-- Checkout 2 STEP 5  template schema
+-->
+
+
+<h3 class="block-title">Trechos para emissão</h3>
+<table class="checkout-table">
+    <thead>
+        <tr>
+            <th>Cia.</th>
+            <th># Voo</th>
+            <th>Paradas</th>
+            <th>Data</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Duração</th>
+            <th>Milhas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- {{#OUTBOUND}} -->
+        <tr>
+            <td>{{OP}}</td>
+            <td style="line-height: 14px">
+                {{FLIGHT_NUMBER}}
+                
+                {{#CONNECTION}}
+                <br><small>+ {{FLIGHT_NUMBER}}</small>
+                {{/CONNECTION}}
+            </td>
+            <td>{{ESCALE}}</td>
+            <td>{{DATE}}</td>
+            <td>[{{DEPARTURE_TIME}}] - {{DEPARTURE_LOCATION_NAME}}</td>
+            <td>[{{ARRIVAL_END_TIME}}] - {{ARRIVAL_END_LOCATION_NAME}}</td>
+            <td>{{TOTAL_FLIGHT_DURATION}}</td>
+            <td>{{PRICE_MILES}}</td>
+        </tr>
+        <!-- {{/OUTBOUND}} -->
+
+        <!-- {{#INBOUND}} -->
+        <tr>
+            <td>{{OP}}</td>
+            <td style="line-height: 14px">
+                {{FLIGHT_NUMBER}}
+                
+                {{#CONNECTION}}
+                <br><small>+ {{FLIGHT_NUMBER}}</small>
+                {{/CONNECTION}}
+            </td>
+            <td>{{ESCALE}}</td>
+            <td>{{DATE}}</td>
+            <td>[{{DEPARTURE_TIME}}] - {{DEPARTURE_LOCATION_NAME}}</td>
+            <td>[{{ARRIVAL_END_TIME}}] - {{ARRIVAL_END_LOCATION_NAME}}</td>
+            <td>{{TOTAL_FLIGHT_DURATION}}</td>
+            <td>{{PRICE_MILES}}</td>
+        </tr>
+        <!-- {{/INBOUND}} -->
+    </tbody>
+</table>
+<h3 class="block-title">Passageiros</h3>
+
+<table class="checkout-table passenger-table">
+    <thead>
+        <tr>
+            <th>Pax</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+            <th>Nascimento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- {{#PASSENGERS}} -->
+        <tr>
+            <td id="tabela-pax"><b>{{@index}}</b></td>
+            <td id="tabela-nome">{{NAME}}</td>
+            <td id="tabela-telefone">{{MOBILE}}</td>
+            <td id="tabela-email">{{EMAIL}}</td>
+            <td id="tabela-nascimento">{{BIRTHDATE}}</td>
+        </tr>
+        <!-- {{/PASSENGERS}} -->
+    </tbody>
+</table>
+
+<h3 class="block-title">Dados Financeiros</h3>
+<table class="checkout-table">
+    <thead>
+        <tr>
+            <th>CIA</th>
+            <th>#Voo</th>
+            <th>Milhas (Trecho)</th>
+            <th>Tarifa (Trecho)</th>
+            <th>Taxas (Trecho)</th>
+            <th>PAX (Trecho)</th>
+            <th>Milhas Total</th>
+            <th>Valor Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#OUTBOUND}}
+        <tr>
+            <td>{{OP}}</td>
+            <td>{{FLIGHT_NUMBER}}</td>
+            <td>{{PRICE_MILES}}</td>
+            <td>{{PRICE_MILHASFACIL_RATE}}</td>
+            <td>{{TAX}}</td>
+            <td>{{PAX}}</td>
+            <td>{{PRICE_MILES_TOTAL}}</td>
+            <td>{{PRICE_MILHASFACIL_TOTAL}}</td>
+        </tr>
+        {{/OUTBOUND}}
+        
+        {{#INBOUND}}
+        <tr>
+            <td>{{OP}}</td>
+            <td>{{FLIGHT_NUMBER}}</td>
+            <td>{{PRICE_MILES}}</td>
+            <td>{{PRICE_MILHASFACIL_RATE}}</td>
+            <td>{{TAX}}</td>
+            <td>{{PAX}}</td>
+            <td>{{PRICE_MILES_TOTAL}}</td>
+            <td>{{PRICE_MILHASFACIL_TOTAL}}</td>
+        </tr>
+        {{/INBOUND}}
+        <tr style="background-color:#fff">
+            <td colspan="6">Total:</td>
+            <td>{{TOTALS.MILES}}</td>
+            <td>R$ {{TOTALS.PRICE}}</td>
+        </tr>
+    </tbody>
+</table>
+
+{{#CARD_DATA}}
+<br />
+<table class="checkout-table">
+    <thead>
+        <tr>
+            <th>Pagamento</th>
+            <th>Bandeira</th>
+            <th>Titular</th>
+            <th>Entrada(à vista)</th>
+            <th>Parcelas</th>
+            <th>Valor da Parcela</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cartão de Crédito</td>
+            <td>{{CARD_FLAG}}</td>
+            <td>{{CARD_NAME}}</td>
+            <td>{{ON_CASH}}</td>
+            <td>{{CARD_PARCELS}}</td>
+            <td>{{CARD_PARCELS_VALUE}}</td>
+        </tr>
+    </tbody>
+</table>
+{{/CARD_DATA}}
+
+
+{{#if OBS}}
+<h3 class="block-title">Observações Importantes</h3>
+
+<p class="simple-text">
+    {{OBS}}    
+</p>
+{{/if}}
+<input type="button" name="next" class="next checkout-next" value="Gerar OP para Emissão" id="next-step5" />
+<input type="button" name="previous" class="previous checkout-back" value="Voltar" />

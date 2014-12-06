@@ -1,0 +1,277 @@
+<div id="list-inbound" data-ccd="0" data-ccd-oncash="0" data-inv="0"> 
+    <div class="listInbound">
+        <!-- {{#INBOUND}} -->
+        <div class="card-result-header">
+            
+            {{#if HAS_CHILDREN}}
+                <!--==================-->
+                <!-- card quando houver crianças  -->
+                <!--==================-->
+
+                <div class="card-result card-children {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} card-going-back" data-calculated-fares="{{CALCULATED_FARES}}" >
+                    <!-- Filter options -->
+                    <div class="hidden">
+                        <span class="sortCia">{{OP}}</span>                                
+                        <span class="card-promo">{{HAS_PROMO}}</span>
+                    </div>
+                    <!-- Filter options -->
+                    <label id="card-{{@index}}" for="flight-inbound-{{@index}}" class="cf" data-flight-number="{{FLIGHT_NUMBER}}">
+                        <div class="td1 left select-card">
+                            <label class="styleform-card">
+                                <input type="radio" name="flight-inbound" id="flight-inbound-{{@index}}">
+                                <span>Selecionar</span>
+                            </label>
+                        </div>
+                        <div class="td2 left">
+                            <div class="card-flight-company">
+                                <span class="title-voo">voo:</span>
+                                <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                            </div>
+                        </div>
+                        <div class="td3 left info-flight">
+                            <div class="price-children-info">
+                                <div class="info-flight-card left">
+                                    <p><span>{{DEPARTURE_TIME}}</span><span class="departure-time hide">{{DEPARTURE_TIME_BARE}}</span> h</p>
+                                    <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                                </div>
+                                <div class="info-flight-card left">
+                                    <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                                    <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p>
+                                </div>
+                                <div class="info-flight-card left">
+                                    <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                                    <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" data-title="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_END_LOCATION}}</a></p>
+                                </div>
+                                <div class="info-flight-card quebra left">
+                                    <span class="stop-count"><span>{{STOPS_NUMBER}}</span>Paradas</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left option-children">
+                            <p><img src="static/img/ico-adult-card.png" alt=""></p>
+                            <p><img src="static/img/ico-children-card.png" alt=""></p>
+                        </div>
+                        <div class="td4 left destiny destiny-children">
+                            <div class="children">
+                                <p>de</p>
+                                <p id="price-money" data-price-money="{{PRICE_MONEY}}"><span>R$</span> {{PRICE_MONEY}}<span></span></p>
+                            </div>
+                            <div class="children">
+                                <p>de</p>
+                                <p id="price-money" data-price-money="{{PRICE_MONEY}}"><span>R$</span> {{PRICE_MONEY}}<span></span></p>
+                            </div>
+                            
+                        </div>
+                        <div class="td5 left price-economy">
+                            <div class="price-children">
+                                <div class="price-milhas-facil left">
+                                    <p class="text-promo"></p>
+                                    <p id="price_milhasfacil" data-price-milhasfacil="{{PRICE_MILHASFACIL}}" ><span>R$</span> {{PRICE_MILHASFACIL}}<span></span></p>
+                                </div>
+                                <div class="price-milhas-facil-save">
+                                    <div class="result-economy">
+                                        <p>economize</p>
+                                        <p id="earn-money" data-earn-money="{{EARN_MONEY}}"><span>R$</span>{{EARN_MONEY}}<span></span></p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="price-children">
+                                <div class="price-milhas-facil left">
+                                    <p class="text-promo"></p>
+                                    <p id="price_milhasfacil" data-price-milhasfacil="{{PRICE_MILHASFACIL}}" ><span>R$</span> {{PRICE_MILHASFACIL}}<span></span></p>
+                                </div>
+                                <div class="price-milhas-facil-save">
+                                    <div class="result-economy">
+                                        <p>economize</p>
+                                        <p id="earn-money" data-earn-money="{{EARN_MONEY}}"><span>R$</span>{{EARN_MONEY}}<span></span></p>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </label>  
+                    <!-- div-card-details -->
+                    <div class="div-card-details">
+                        <div class="header-details">
+                            <div class="{{CARD_CIA}} info-voo-details">
+                                <span>voo: {{DEPARTURE_LOCATION}}</span>
+                                <span><strong>{{STOPS_NUMBER}} paradas:</strong> {{ESCALE}}</span>
+                                <span><strong>Taxa de Emb.:</strong> R$ {{TAX}}</span>
+                                <span><strong>Quantidade de Milhas:</strong> <span id="price-miles" class="price-miles" data-price-miles="{{PRICE_MILES}}" >{{PRICE_MILES}} ADL</span> / <span id="price-miles-infant" class="price-miles-infant" data-price-miles-infant="{{PRICE_MILES_INFANT}}" >{{PRICE_MILES_INFANT}} CHD</span></span>
+                            </div>
+                        </div>                
+                    <!-- {{#CONNECTION}} -->
+                        <div class="list-espera left">
+                            <div class="info-voo-detalhe left">
+                                <span class="halt-one">
+                                    <p>(<a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a>)</p>
+                                    <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                </span>
+                                <span class="number-flight-halt">
+                                    <div>{{FLIGHT_NUMBER}}</div>
+                                    <div>duração <span class="sort-duration" >{{FLIGHT_DURATION}} h</span></div>
+                                </span>
+                                <span class="halt-two">
+                                    <p>(<a alt="{{ARRIVAL_LOCATION_NAME}}" data-title="{{ARRIVAL_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_LOCATION}}</a>)</p>
+                                    <p>{{ARRIVAL_TIME}} h</p>
+                                </span>
+                            </div>
+                            <div class="espera left">
+                                <p>espera</p>
+                                <p>{{TIME_WAITING}} h</p>
+                            </div>
+                        </div>
+                    <!-- {{/CONNECTION}} -->
+                    </div>
+                    <!-- div-card-details -->            
+                </div>
+            {{else}}
+                <!--==================-->
+                <!-- card quando NAO houver crianças  -->
+                <!--==================-->
+        <div class="card-result {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} card-going-back" data-calculated-fares="{{CALCULATED_FARES}}" >
+            <!-- Filter options -->
+            <div class="hidden">
+                <span class="sortCia">{{OP}}</span>
+                <span class="card-promo">{{HAS_PROMO}}</span>
+            </div>
+            <!-- Filter options -->
+            <label id="card-{{@index}}" for="flight-inbound-{{@index}}" class="cf" data-flight-number="{{FLIGHT_NUMBER}}">
+                <div class="td1 left select-card">
+                    
+                    <label class="styleform-card">
+                        <input type="radio" name="flight-inbound" id="flight-inbound-{{@index}}">
+                        <span>Selecionar</span>
+                    </label>
+                </div>
+                <div class="td2 left">
+                    <div class="card-flight-company">
+                        <span class="title-voo">voo:</span>
+                        <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                    </div>
+                </div>
+                <div class="td3 left info-flight">
+                    <div class="info-flight-card left">
+                        <p><span>{{DEPARTURE_TIME}}</span><span class="departure-time hide">{{DEPARTURE_TIME_BARE}}</span> h</p>
+                        <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip"></a>{{DEPARTURE_LOCATION}}</p>
+                    </div>
+                    <div class="info-flight-card left">
+                        <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                        <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p><p class="duration hide">{{TOTAL_FLIGHT_DURATION_BARE}}</p>
+                    </div>
+                    <div class="info-flight-card left">
+                        <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                        <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" title="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_END_LOCATION}}</a></p>
+                    </div>
+                    <div class="info-flight-card quebra left">
+                        <span class="stop-count"><span class="legs" >{{STOPS_NUMBER}}</span>Paradas</span>
+                    </div>
+                </div>
+                <div class="td4 left destiny">
+                    <p>de</p>
+                    <p id="price-money" data-price-money="{{PRICE_MONEY}}" data-price-money-bare="{{PRICE_MONEY_US}}"><span>R$</span> <span>{{PRICE_MONEY}}</span><span class="cia-price hidden" >{{PRICE_MONEY_US}}</span><span></span></p>
+                </div>
+                <div class="td5 left price-economy">
+                    <div class="price-milhas-facil left">
+                        <p class="text-promo"></p>
+                        <p id="price_milhasfacil" data-price-milhasfacil="{{PRICE_MILHASFACIL}}" data-price-milhasfacil-bare="{{PRICE_MILHASFACIL_BARE}}" ><span>R$</span> <span>{{PRICE_MILHASFACIL}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_BARE}}</span><span></span></p>
+                    </div>
+                    <div class="price-milhas-facil-save">
+                        <div class="result-economy">
+                            <p>economize</p>
+                            <p id="earn-money" data-earn-money="{{EARN_MONEY}}" data-earn-money-bare="{{EARN_MONEY_BARE}}" ><span>R$</span><span>{{EARN_MONEY}}</span><span class="earn-money hidden">{{EARN_MONEY_BARE}}</span> <span></span></p>
+                <div class="card-result {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} card-going-back" data-calculated-fares="{{CALCULATED_FARES}}" >
+                    <!-- Filter options -->
+                    <div class="hidden">
+                        <span class="sortCia">{{OP}}</span>                                
+                        <span class="card-promo">{{HAS_PROMO}}</span>
+                    </div>
+                    <!-- Filter options -->
+                    <label id="card-{{@index}}" for="flight-inbound-{{@index}}" class="cf" data-flight-number="{{FLIGHT_NUMBER}}">
+                        <div class="td1 left select-card">
+                            
+                            <label class="styleform-card">
+                                <input type="radio" name="flight-inbound" id="flight-inbound-{{@index}}">
+                                <span>Selecionar</span>
+                            </label>
+                        </div>
+                        <div class="td2 left">
+                            <div class="card-flight-company">
+                                <span class="title-voo">voo:</span>
+                                <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                            </div>
+                        </div>
+                        <div class="td3 left info-flight">
+                            <div class="info-flight-card left">
+                                <p><span>{{DEPARTURE_TIME}}</span><span class="departure-time hide">{{DEPARTURE_TIME_BARE}}</span> h</p>
+                                <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip"></a>{{DEPARTURE_LOCATION}}</p>
+                            </div>
+                            <div class="info-flight-card left">
+                                <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                                <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p><p class="duration hide">{{TOTAL_FLIGHT_DURATION_BARE}}</p>
+                            </div>
+                            <div class="info-flight-card left">
+                                <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                                <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" title="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_END_LOCATION}}</a></p>
+                            </div>
+                            <div class="info-flight-card quebra left">
+                                <span class="stop-count"><span class="legs" >{{STOPS_NUMBER}}</span>Paradas</span>
+                            </div>
+                        </div>
+                        <div class="td4 left destiny">
+                            <p>de</p>
+                            <p id="price-money" data-price-money="{{PRICE_MONEY}}" data-price-money-us="{{PRICE_MONEY_US}}"><span>R$</span> <span>{{PRICE_MONEY}}</span><span class="cia-price hidden" >{{PRICE_MONEY_US}}</span><span></span></p>
+                        </div>
+                        <div class="td5 left price-economy">
+                            <div class="price-milhas-facil left">
+                                <p class="text-promo"></p>
+                                <p id="price_milhasfacil" data-price-milhasfacil="{{PRICE_MILHASFACIL}}" data-price-milhasfacil-bare="{{PRICE_MILHASFACIL_BARE}}" ><span>R$</span> <span>{{PRICE_MILHASFACIL}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_BARE}}</span><span></span></p>
+                            </div>
+                            <div class="price-milhas-facil-save">
+                                <div class="result-economy">
+                                    <p>economize</p>
+                                    <p id="earn-money" data-earn-money="{{EARN_MONEY}}" data-earn-money-us="{{EARN_MONEY_BARE}}" ><span>R$</span><span>{{EARN_MONEY}}</span><span class="earn-money hidden">{{EARN_MONEY_BARE}}</span> <span></span></p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    </label>
+                    <!-- div-card-details -->
+                    <div class="div-card-details">
+                        <div class="header-details">
+                            <div class="{{CARD_CIA}} info-voo-details">
+                                <span>voo: {{DEPARTURE_LOCATION}}</span>
+                                <span><strong>{{STOPS_NUMBER}} paradas:</strong> {{ESCALE}}</span>
+                                <span><strong>Taxa de Emb.:</strong> R$ {{TAX}}</span>
+                                <span><strong>Quantidade de Milhas:</strong> <span id="price-miles" class="price-miles" data-price-miles="{{PRICE_MILES}}" >{{PRICE_MILES}}</span></span>
+                            </div>
+                        </div>                
+                    <!-- {{#CONNECTION}} -->
+                        <div class="list-espera left">
+                            <div class="info-voo-detalhe left">
+                                <span class="halt-one">
+                                    <p>(<a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a>)</p>
+                                    <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                </span>
+                                <span class="number-flight-halt">
+                                    <div>{{FLIGHT_NUMBER}}</div>
+                                    <div>duração <span class="sort-duration" >{{FLIGHT_DURATION}} h</span></div>
+                                </span>
+                                <span class="halt-two">
+                                    <p>(<a alt="{{ARRIVAL_LOCATION_NAME}}" data-title="{{ARRIVAL_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_LOCATION}}</a>)</p>
+                                    <p>{{ARRIVAL_TIME}} h</p>
+                                </span>
+                            </div>
+                            <div class="espera left">
+                                <p>espera</p>
+                                <p>{{TIME_WAITING}} h</p>
+                            </div>
+                        </div>
+                    <!-- {{/CONNECTION}} -->
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+        <!-- {{/INBOUND}} -->

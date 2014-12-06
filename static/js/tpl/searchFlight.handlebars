@@ -1,0 +1,785 @@
+<!-- 
+-- Handlebars template engine
+-- Search Flight template schema
+-->
+<div id="content-modal-pagamento">
+    <div id="content-modal-interno-pagamento">
+        <div id="md-block-pagamento" class="clearfix">
+            <div class="md-title">
+                <h1>Opções de pagamento</h1>
+                <a href="" class="md-close transition" title="Fechar">X</a>
+            </div>
+            <h2 class="title-step" id="titulo-formas-pagamento">Valor total do pedido, para todos os passageiros e todas as taxas inclusas</h2>
+            <div id="pag-boleto" class="left" style="width: 503px;">
+                <h3>Pague Faturado e/ou à Vista</h3>
+                <p></p>
+                <p>R$ 0,00</p>
+            </div>
+            <div id="pag-cartao" class="left clearfix hide">
+                <h3>Pague no Cartão</h3>
+                <p>Entrada de: <span>R$ 0,00</span></p>
+                <p class="left">Restante em:</p>
+
+                <ul class="left" id="price-cartao-col1">                
+                    <li><strong>1x:</strong> R$ 0,00</li>
+                    <li><strong>2x:</strong> R$ 0,00</li>
+                    <li><strong>3x:</strong> R$ 0,00</li>
+                    <li><strong>4x:</strong> R$ 0,00</li>
+                    <li><strong>5x:</strong> R$ 0,00</li>
+                    <li><strong>6x:</strong> R$ 0,00</li>
+                </ul>
+                <ul class="left" id="price-cartao-col2">
+                    <li><strong>7x:</strong> R$ 0,00</li>
+                    <li><strong>8x:</strong> R$ 0,00</li>
+                    <li><strong>9x:</strong> R$ 0,00</li>
+                    <li><strong>10x:</strong> R$ 0,00</li>
+                    <li><strong>11x:</strong> R$ 0,00</li>
+                    <li><strong>12x:</strong> R$ 0,00</li>  
+                </ul>
+            </div>
+            <em style="color: #333;font-size: 10px;display: block;font-style: normal;font-weight: normal;position: inherit;float: left;padding: 0px 13px 8px 13px;">* Para pagamentos Faturados/à Vista, o prazo será estabelecido a critério do Milhas Fácil.</em>
+        </div>
+    </div>
+</div>
+<div id="summary-purchase" >
+    <div class="wrapper">
+        <div id="heade-summary">
+            <h1 class="left">Resumo do pedido</h1>
+            <h2 class="left">Valores totais para: {{ADL_QTD}} adulto(s) {{#if HAS_CHILDREN}} e {{CHD_QTD}} criança(s) {{/if}}</h2>
+            <a id="bt-opt-pay" class="left transition">Ver opções de pagamento</a>
+            <div class="clear"></div>
+        </div>
+        <div id="checkout-departure" class="box-select-flight checkout-departure">
+            
+            <div class="cia-not-defined">
+                <span><img src="static/img/bt-seguir-voo-icon.png" alt=""> Selecione o voo de ida</span>
+            </div>
+            <div class="slide-caixa">
+                <div class="cia-tam card-promo">
+                    <div class="view view-first">
+                        <span class="checkout-flight-cia left">
+                            <span>Voo de ida</span>
+                            <span class="checkout-flight-num-resumo" >2738</span>
+                        </span>
+                        <span class="checkout-flight-origin left">
+                            <span>Milhas</span>
+                            <span class="milhas">24.000</span>
+                        </span>
+                        <span class="checkout-flight-destination left">
+                            <span>Milhas Fácil</span>
+                            <span class="price-milhasfacil" >R$ 14.270,00</span>
+                        </span>
+                        <span class="checkout-flight-save left">
+                            <div id="save-value">
+                                <p>Economize</p>
+                                <p class="earn-money">R$ 900,00</p>
+                            </div>
+                        </span>
+                        <div class="mask">
+                            <a class="info-ver"><img src="static/img/bt-ver-voo-icon.png" alt=""> Ver voo</a>
+                            <a class="info" id="remover-voo-outbound"><img src="static/img/bt-excluir-voo-icon.png" alt=""> Excluir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="checkout-return" class="box-select-flight checkout-return">
+            <div class="cia-not-defined">
+                <span><img src="static/img/bt-seguir-voo-icon.png" alt=""> Selecione o voo de volta</span>
+            </div>
+            <div class="slide-caixa">
+                <div class="cia-tam">
+                    <div class="view view-first">
+                        <span class="checkout-flight-cia left">
+                            <span>Voo de volta</span>
+                            <span class="checkout-flight-num-resumo" >2738</span>
+                        </span>
+                        <span class="checkout-flight-origin left">
+                            <span>Milhas</span>
+                            <span class="milhas" >24.000</span>
+                        </span>
+                        <span class="checkout-flight-destination left">
+                            <span>Milhas Fácil</span>
+                            <span class="price-milhasfacil" >R$ 24.270,00</span>
+                        </span>
+                        <span class="checkout-flight-save left">
+                            <div id="save-value">
+                                <p>Economize</p>
+                                <p class="earn-money" >R$ 900,00</p>
+                            </div>
+                        </span>
+                        <div class="mask">
+                            <a class="info-ver"><img src="static/img/bt-ver-voo-icon.png" alt=""> Ver voo</a>
+                            <a class="info" id="remover-voo-inbound"><img src="static/img/bt-excluir-voo-icon.png" alt=""> Excluir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="checkout-go" class="checkout-go transition disabled" disabled>Iniciar emissão</button>
+    </div>
+</div>
+<!-- Search Results -->
+<div id="search-results">
+    <div class="wrapper">
+        {{#if OUTBOUND}}
+            <div id="date-flight-outbound">
+                <div class="flag-voo left">
+                    <p class="left">Voo de ida</p>
+                    <p class="left">{{OUTBOUND_DATE_TRUNCATED}}</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="summary-flight-outbound" class="left">
+                    <span>{{DEPARTURE_LOCATION}}</span>
+                    <span id="arrow-detino"><img src="static/img/seta-destino.png" alt=""></span>
+                    <span>{{ARRIVAL_LOCATION}}</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <!-- Seven Days OUTBOUND-->
+            <section id="sevenDaysOutbound">
+                <h1 class="titleSection">Melhores preços para datas flexíveis</h1>
+                <ul class="sevenDaysList clearfix">                   
+                    <!-- .deprecatedDay {{DEPRECATED_DAY}} - Dias que não passíveis de marcação de voo
+                         .priceMilhasFacil {{PRICE_MILHAS_FACIL}} - Marcação para quando o dia for o mais barato do Milhas fácil
+                         .currentDay {{CURRENT_DAY}} - Dia pesquisado
+                    -->
+                    {{#OUTBOUND_SEVEN_DAYS.AZUL}}
+                    <li class="sevenDays transition {DEPRECATED_DAY}} {PRICE_MILHAS_FACIL}} {CURRENT_DAY}}" data-day="{DAY}}" data-month="{MONTH}}" data-year="{YEAR}}">
+                        <span class="dateSevenDays">{DAY_NAME}}</span>
+                        <span class="startingSevenDays">a partir de</span>
+                        <span class="priceSevenDays">R$ {PRICE}}</span>
+                    </li>
+                    {{/OUTBOUND_SEVEN_DAYS.AZUL}}
+                </ul>
+            </section>
+            <section id="sevenDaysOutbound">
+                <h1 class="titleSection">Melhores preços para datas flexíveis</h1>
+                <ul class="sevenDaysList clearfix">
+                    <li class="sevenDays deprecatedDay transition" data-day="20" data-month="01" data-year="2015" data-trip="outbound">
+                        <span class="dateSevenDays">seg 14 / set</span>
+                        <span class="startingSevenDays">a partir de</span>
+                        <span class="priceSevenDays">R$ 2.300,00</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- Filtro dos voos de ida -->
+            <div class="filter-options-outbound">
+                <div class="container-filter">
+                    <label class="td1 th left" for="filter1">
+                        <p class="click-filter">Voo de ida {{OUTBOUND_DATE_TRUNCATED}}</p>
+                        
+                    </label>
+                    <label class="td2 th left">
+                        <span class="click-filter">Cia aérea</span>
+                        <ul id="menu-filter1" class="menu-filter">
+                            <li><a id="flight-quant-all" class="flight-quant-all" data-sort="flight-cia" data-sort-order="all" data-sort-method="filter" >Ver todas</a></li>
+                            <li><a id="flight-quant-azul" class="flight-quant-azul" data-sort="flight-cia" data-sort-order="TAM" data-sort-method="filter" >TAM</a></li>
+                            <li><a id="flight-quant-tam-value" class="flight-quant-tam-value" data-sort="flight-cia" data-sort-order="GOL" data-sort-method="filter" >GOL</a></li>
+                            <li><a id="flight-quant-gol-value" class="flight-quant-gol-value" data-sort="flight-cia" data-sort-order="AZUL" data-sort-method="filter" >AZUL</a></li>
+                        </ul>
+                    </label>
+                    <label class="td3 th left">
+                        <span class="click-filter">Duração</span>
+                        <ul id="menu-filter2" class="menu-filter">
+                            <li><a id="sort-legs" class="legs" data-sort="legs" data-sort-order="asc" >Voos diretos</a></li>
+                            <li><a id="sort-duration" class="sort-duration" data-sort="duration" data-sort-order="asc" >Voos mais curtos</a></li>
+                            <li><a id="sort-duration" class="sort-duration" data-sort="duration" data-sort-order="desc" >Voos mais longos</a></li>
+                            <li><a id="sort-departure-time" class="sort-departure-time" data-sort="departure-time" data-sort-order="asc" >Partida mais cedo</a></li>
+                            <li><a id="sort-departure-time" class="sort-departure-time" data-sort="departure-time" data-sort-order="desc" >Partida mais tarde</a></li>
+                            <li><a id="sort-arrival-time" class="sort-arrival-time" data-sort="arrival-time" data-sort-order="asc" >Chegada mais cedo</a></li>
+                            <li><a id="sort-arrival-time" class="sort-arrival-time" data-sort="arrival-time" data-sort-order="desc" >Chegada mais tarde</a></li>
+                        </ul>
+                    </label>
+                    <label class="td4 th left">
+                        <span class="click-filter">Preço cia.</span>
+                        <ul id="menu-filter3" class="menu-filter">
+                            <li><a id="sort-cia-price" class="sort-cia-price" data-sort="cia-price" data-sort-order="asc" >Mais baratos</a></li>
+                            <li><a id="sort-cia-price" class="sort-cia-price" data-sort="cia-price" data-sort-order="desc" >Mais caros</a></li>
+                        </ul>
+                    </label>
+                    <label class="td5 th left">
+                        <span class="click-filter">Milhas Fácil</span>
+                        <ul id="menu-filter4" class="menu-filter">
+                            <li><a id="sort-price-milhasfacil" class="sort-price-milhasfacil" data-sort="price-milhasfacil" data-sort-order="asc" >Mais baratos</a></li>
+                            <li><a id="sort-price-milhasfacil" class="sort-price-milhasfacil" data-sort="price-milhasfacil" data-sort-order="desc" >Mais caros</a></li>
+                                 <li><a id="has-promo" class="has-promo" data-sort="has-promo" data-sort-order="desc" >Promocional</a></li>
+                            <li><a id="sort-earn-money" class="sort-earn-money" data-sort="earn-money" data-sort-order="desc" >Maior economia</a></li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+            <!-- Lista de voos de Ida -->
+            <div id="list-outbound" data-ccd="0" data-ccd-oncash="0" data-inv="0"> 
+                <div class="listOutbound">  
+                    {{#OUTBOUND}}
+                        <div class="card-result-header">
+                            
+                            {{#if HAS_CHILDREN}}
+                                <!--==================-->
+                                <!-- card quando houver crianças  -->
+                                <!--==================-->
+                            <div class="card-result card-children {{CARD_CIA}} {{@index}} {{CARD_CHILDREN}} {{CARD_EXPENSIVE_CHD}} {{CARD_EXPENSIVE_ADL}} {{CARD_PROMO_CHD}} {{CARD_PROMO_ADL}} card-going" data-calculated-fares="{{CALCULATED_FARES}}">
+                            <!-- Filter options -->
+                            <div class="hidden">
+                                <span class="flight-cia">{{OP}}</span>                                
+                                <span class="has-promo">{{HAS_PROMO}}</span>
+                            </div>
+                            <!-- Filter options -->
+                            <label id="card-{{@index}}" for="flight-outbound-{{@index}}" class="cf" data-flight-number="{{FLIGHT_NUMBER}}">
+                                <div class="td1 left select-card">
+                                    <label class="styleform-card">
+                                        <input type="radio" name="flight-outbound" id="flight-outbound-{{@index}}" value="{{@index}}">
+                                        <span>Selecionar</span>
+                                    </label>
+                                </div>
+                                <div class="td2 left">
+                                    <div class="card-flight-company">
+                                        <span class="title-voo">voo:</span>
+                                        <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                                    </div>
+                                </div>
+                                <div class="td3 left info-flight">
+                                    <div class="info-flight-card left">
+                                        <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                        <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                                        <p class="departure-time hide">{{DEPARTURE_TIME_BARE}}</p>
+                                    </div>
+                                    <div class="info-flight-card left">
+                                        <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                                        <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p><p class="duration hide">{{TOTAL_FLIGHT_DURATION_BARE}}</p>
+                                    </div>
+                                    <div class="info-flight-card left">
+                                        <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                                        <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip" data-title="{{ARRIVAL_END_LOCATION_NAME}}">{{ARRIVAL_END_LOCATION}}</a></p>
+                                    </div>
+                                    <div class="info-flight-card quebra left">
+                                        <span class="stop-count"><span class="legs" >{{STOPS_NUMBER}}</span>Parada(s)</span>
+                                    </div>
+                                </div>
+                                <div class="left option-children">
+                                    <p><img src="static/img/ico-adult-card.png" alt=""></p>
+                                    <p><img src="static/img/ico-children-card.png" alt=""></p>
+                                </div>
+                                <div class="td4 left destiny-children">
+                                    <div class="children">
+                                        <p>de</p>
+                                        <p id="price-money"><span>R$</span> <span>{{PRICE_MONEY}}</span><span class="cia-price hidden" >{{PRICE_MONEY_BARE}}</span><span></span></p>
+                                    </div>
+                                    <div class="children">
+                                        <p>de</p>
+                                        <p id="price-money"><span>R$</span> <span>{{PRICE_MONEY_INFANT}}</span><span class="cia-price hidden" >{{PRICE_MONEY_INFANT_BARE}}</span><span></span></p>
+                                    </div>
+                                </div>
+                                <div class="td5 left price-economy">
+                                    <div class="price-children">
+                                        <div class="price-milhas-facil left">
+                                            <p class="text-promo"></p>
+                                            <p id="price_milhasfacil"><span>R$</span> <span>{{PRICE_MILHASFACIL}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_BARE}}</span><span></span></p>
+                                        </div>
+                                        <div class="price-milhas-facil-save">
+                                            <div class="result-economy">
+                                                <p>economize</p>
+                                                <p id="earn-money"><span>R$</span><span>{{EARN_MONEY}}</span><span class="earn-money hidden">{{EARN_MONEY_BARE}}</span> <span></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="price-children">
+                                        <div class="price-milhas-facil left">
+                                            <p class="text-promo"></p>
+                                            <p id="price_milhasfacil"><span>R$</span> <span>{{PRICE_MILHASFACIL_INFANT}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_INFANT_BARE}}</span><span></span></p>
+                                        </div>
+                                        <div class="price-milhas-facil-save">
+                                            <div class="result-economy">
+                                                <p>economize</p>
+                                                <p id="earn-money"><span>R$</span><span>{{EARN_MONEY_CHD}}</span><span></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </label>
+                                    <!-- div-card-details -->
+                                    <div class="div-card-details">
+                                        <div class="header-details">
+                                            <div class="{{CARD_CIA}} info-voo-details">
+                                                <span><strong>voo:</strong> {{FLIGHT_NUMBER}}</span>
+                                                <span><strong>{{STOPS_NUMBER}} parada(s):</strong> {{ESCALE}}</span>
+                                                <span><strong>Taxa de Emb.:</strong> R$ {{TAX}}</span>
+                                                <span><strong>Quantidade de Milhas:</strong> <span id="price-miles" class="price-miles" style="margin-left:5px">{{PRICE_MILES}} ADL</span> / <span id="price-miles-infant" class="price-miles-infant">{{PRICE_MILES_INFANT}} CHD</span></span>
+                                            </div>
+                                        </div>
+                                        <div id="container-details">
+                                            {{#CONNECTION}}
+                                            <div class="list-espera left">
+                                                <div class="espera left">
+                                                    <p>espera</p>
+                                                    <p>{{TIME_WAITING}} h</p>
+                                                </div>
+                                                <div class="info-voo-detalhe left">
+                                                    <span class="halt-one">
+                                                        <p>(<a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a>)</p>
+                                                        <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                    </span>
+                                                    <span class="number-flight-halt">
+                                                        <div style="line-height:13px !important; top:-6px; position: relative">
+                                                            {{#if IS_CONNECTION}}
+                                                                <p style="font-size: 9px">CONEXÃO</p>
+                                                            {{/if}}
+
+                                                            {{FLIGHT_NUMBER}}
+                                                        </div>
+                                                        <div>duração <span class="sort-duration" >{{FLIGHT_DURATION}} h</span></div>
+                                                    </span>
+                                                    <span class="halt-two">
+                                                        <p>(<a alt="{{ARRIVAL_LOCATION_NAME}}" data-title="{{ARRIVAL_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_LOCATION}}</a>)</p>
+                                                        <p>{{ARRIVAL_TIME}} h</p>
+                                                    </span>
+                                                </div>    
+                                            </div>
+                                            {{/CONNECTION}}
+                                        </div>                
+                                    </div><!-- div-card-details -->  
+                                </div>           
+                            {{else}}
+                                <!--==================-->
+                                <!-- card quando NAO houver crianças  -->
+                                <!--==================-->
+                                <div class="card-result {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} card-going" data-calculated-fares="{{CALCULATED_FARES}}" >
+                                    <!-- Filter options -->
+                                    <div class="hidden">
+                                        <span class="flight-cia">{{OP}}</span>                                
+                                        <span class="has-promo">{{HAS_PROMO}}</span>
+                                    </div>
+                                    <!-- Filter options -->
+                                    <label id="card-{{@index}}" for="flight-outbound-{{@index}}" class="cf">
+                                        <div class="td1 left select-card">
+                                            
+                                            <label class="styleform-card">
+                                                <input type="radio" name="flight-outbound" id="flight-outbound-{{@index}}" value="{{@index}}">
+                                                <span>Selecionar</span>
+                                            </label>
+                                        </div>
+                                        <div class="td2 left">
+                                            <div class="card-flight-company">
+                                                <span class="title-voo">voo:</span>
+                                                <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="td3 left info-flight">
+                                            <div class="info-flight-card left">
+                                                <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                                                <p class="departure-time hide">{{DEPARTURE_TIME_BARE}}</p>
+                                            </div>
+                                            <div class="info-flight-card left">
+                                                <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                                                <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p><p class="duration hide">{{TOTAL_FLIGHT_DURATION_BARE}}</p>
+                                            </div>
+                                            <div class="info-flight-card left">
+                                                <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                                                <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip" data-title="{{ARRIVAL_END_LOCATION_NAME}}">{{ARRIVAL_END_LOCATION}}</a></p>
+                                            </div>
+                                            <div class="info-flight-card quebra left">
+                                                <span class="stop-count"><span class="legs" >{{STOPS_NUMBER}}</span>Parada(s)</span>
+                                            </div>
+                                        </div>
+                                        <div class="td4 left destiny">
+                                            <p>de</p>
+                                            <p id="price-money"><span>R$</span><span>{{PRICE_MONEY}}</span><span class="cia-price hidden">{{PRICE_MONEY_BARE}}</span><span></span></p>
+                                        </div>
+                                        <div class="td5 left price-economy">
+                                            <div class="price-milhas-facil left">
+                                                <p class="text-promo"></p>
+                                                <p id="price_milhasfacil"><span>R$</span> <span>{{PRICE_MILHASFACIL}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_BARE}}</span><span></span></p>
+                                            </div>
+                                            <div class="price-milhas-facil-save">
+                                                <div class="result-economy">
+                                                    <p>economize</p>
+                                                    <p id="earn-money"><span>R$</span><span>{{EARN_MONEY}}</span><span class="earn-money hidden">{{EARN_MONEY_BARE}}</span> <span></span></p>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </label>
+                                    <!-- div-card-details -->
+                                    <div class="div-card-details">
+                                        <div class="header-details">
+                                            <div class="{{CARD_CIA}} info-voo-details">
+                                                <span><strong>voo:</strong> {{FLIGHT_NUMBER}}</span>
+                                                <span><strong>{{STOPS_NUMBER}} parada(s):</strong> {{ESCALE}}</span>
+                                                <span><strong>Taxa de Emb.:</strong> R$ {{TAX}}</span>
+                                                <span><strong>Quantidade de Milhas:</strong> <span id="price-miles" class="price-miles" style="margin-left:5px">{{PRICE_MILES}}</span></span>
+                                            </div>
+                                        </div>                
+                                    <div id="container-details">
+                                            {{#CONNECTION}}
+                                            <div class="list-espera left">
+                                                <div class="espera left">
+                                                    <p>espera</p>
+                                                    <p>{{TIME_WAITING}} h</p>
+                                                </div>
+                                                <div class="info-voo-detalhe left">
+                                                    <span class="halt-one">
+                                                        <p>(<a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a>)</p>
+                                                        <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                    </span>
+                                                    <span class="number-flight-halt">
+                                                        <div style="line-height:13px !important; top:-6px; position: relative">
+                                                            {{#if IS_CONNECTION}}
+                                                                <p style="font-size: 9px">CONEXÃO</p>
+                                                            {{/if}}
+                                                            {{FLIGHT_NUMBER}}
+                                                        </div>
+                                                        <div>duração <span class="sort-duration" >{{FLIGHT_DURATION}} h</span></div>
+                                                    </span>
+                                                    <span class="halt-two">
+                                                        <p>(<a alt="{{ARRIVAL_LOCATION_NAME}}" data-title="{{ARRIVAL_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_LOCATION}}</a>)</p>
+                                                        <p>{{ARRIVAL_TIME}} h</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            {{/CONNECTION}}
+                                        </div>   
+                                    </div>
+                                </div>                
+                            {{/if}}
+                        </div><!-- card-result-header -->
+                    {{/OUTBOUND}}
+               </div><!-- List outbound -->              
+            </div>
+        {{else}}
+            <div class="no-result-search">
+                Não foram encontrados registros para a pesquisa. Consulte novamente.
+            </div>
+        {{/if}}
+
+        {{#if INBOUND}}
+            <div id="date-flight-inbound">
+                <div class="flag-voo left">
+                    <p class="left">Voo de volta</p>
+                    <p class="left">{{INBOUND_DATE_TRUNCATED}}</p>
+                    <div class="clear"></div>
+                </div>
+                <div id="summary-flight-inbound" class="left">
+                    <span>{{ARRIVAL_LOCATION}}</span>
+                    <span id="arrow-detino"><img src="static/img/seta-destino.png" alt=""></span>
+                    <span>{{DEPARTURE_LOCATION}}</span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <!-- Seven Days INBOUND-->
+
+            <section id="sevenDaysInbound">
+                <h1 class="titleSection">Melhores preços para datas flexíveis</h1>
+                <ul class="sevenDaysList clearfix">                   
+                    <!-- .deprecatedDay {{DEPRECATED_DAY}} - Dias que não passíveis de marcação de voo
+                         .priceMilhasFacil {{PRICE_MILHAS_FACIL}} - Marcação para quando o dia for o mais barato do Milhas fácil
+                         .currentDay {{CURRENT_DAY}} - Dia pesquisado
+                    -->
+                    {{#INBOUND_SEVEN_DAYS}}
+                    <li class="sevenDays transition {{DEPRECATED_DAY}} {{PRICE_MILHAS_FACIL}} {{CURRENT_DAY}}" data-day="{{DAY}}" data-month="{{MONTH}}" data-year="{{YEAR}}">
+                        <span class="dateSevenDays">{{DAY_NAME}}</span>
+                        <span class="startingSevenDays">a partir de</span>
+                        <span class="priceSevenDays">R$ {{PRICE}}</span>
+                    </li>
+                    {{/INBOUND_SEVEN_DAYS}}
+                </ul>
+            </section> 
+            <div class="filter-options-inbound">
+                <div class="container-filter">
+                    <label class="td1 th left" for="filter1" style="background-color: #c0dbe3 !important">
+                        <p class="click-filter">Voo de Volta {{INBOUND_DATE_TRUNCATED}}</p>            
+                    </label>
+                    <label class="td2 th left" style="background-color: #c0dbe3 !important">
+                        <span class="click-filter">Cia aérea</span>
+                        <ul id="menu-filter1" class="menu-filter">
+                            <li><a id="flight-quant-all" class="flight-quant-all" data-sort="flight-cia" data-sort-order="all" data-sort-method="filter" >Ver todas</a></li>
+                            <li><a id="flight-quant-azul" class="flight-quant-azul" data-sort="flight-cia" data-sort-order="TAM" data-sort-method="filter" >TAM</a></li>
+                            <li><a id="flight-quant-tam-value" class="flight-quant-tam-value" data-sort="flight-cia" data-sort-order="GOL" data-sort-method="filter" >GOL</a></li>
+                            <li><a id="flight-quant-gol-value" class="flight-quant-gol-value" data-sort="flight-cia" data-sort-order="AZUL" data-sort-method="filter" >AZUL</a></li>
+                        </ul>
+                    </label>
+                    <label class="td3 th left" style="background-color: #c0dbe3 !important">
+                        <span class="click-filter">Duração</span>
+                        <ul id="menu-filter2" class="menu-filter">
+                            <li><a id="sort-legs" class="legs" data-sort="legs" data-sort-order="asc" >Voos diretos</a></li>
+                            <li><a id="sort-duration" class="sort-duration" data-sort="duration" data-sort-order="asc" >Voos mais curtos</a></li>
+                            <li><a id="sort-duration" class="sort-duration" data-sort="duration" data-sort-order="desc" >Voos mais longos</a></li>
+                            <li><a id="sort-departure-time" class="sort-departure-time" data-sort="departure-time" data-sort-order="asc" >Partida mais cedo</a></li>
+                            <li><a id="sort-departure-time" class="sort-departure-time" data-sort="departure-time" data-sort-order="desc" >Partida mais tarde</a></li>
+                            <li><a id="sort-arrival-time" class="sort-arrival-time" data-sort="arrival-time" data-sort-order="asc" >Chegada mais cedo</a></li>
+                            <li><a id="sort-arrival-time" class="sort-arrival-time" data-sort="arrival-time" data-sort-order="desc" >Chegada mais tarde</a></li>
+                        </ul>
+                    </label>
+                    <label class="td4 th left" style="background-color: #c0dbe3 !important">
+                        <span class="click-filter">Preço cia.</span>
+                        <ul id="menu-filter3" class="menu-filter">
+                            <li><a id="sort-cia-price" class="sort-cia-price" data-sort="cia-price" data-sort-order="asc" >Mais baratos</a></li>
+                            <li><a id="sort-cia-price" class="sort-cia-price" data-sort="cia-price" data-sort-order="desc" >Mais caros</a></li>
+                        </ul>
+                    </label>
+                    <label class="td5 th left" style="background-color: #c0dbe3 !important">
+                        <span class="click-filter">Milhas Fácil</span>
+                        <ul id="menu-filter4" class="menu-filter">
+                            <li><a id="sort-price-milhasfacil" class="sort-price-milhasfacil" data-sort="price-milhasfacil" data-sort-order="asc" >Mais baratos</a></li>
+                            <li><a id="sort-price-milhasfacil" class="sort-price-milhasfacil" data-sort="price-milhasfacil" data-sort-order="desc" >Mais caros</a></li>
+                            <li><a id="has-promo" class="has-promo" data-sort="has-promo" data-sort-order="desc" >Promocional</a></li>
+                            <li><a id="sort-earn-money" class="sort-earn-money" data-sort="earn-money" data-sort-order="desc" >Maior economia</a></li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+            <div id="list-inbound" data-ccd="0" data-ccd-oncash="0" data-inv="0"> 
+                <div class="listInbound">
+                    {{#INBOUND}}
+                        <div class="card-result-header">
+                            
+                            {{#if HAS_CHILDREN}}
+                                <!--==================-->
+                                <!-- card quando houver crianças  -->
+                                <!--==================-->
+
+                                <div class="card-result card-children {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} {{CARD_CHILDREN}} {{CARD_EXPENSIVE_CHD}} {{CARD_EXPENSIVE_ADL}} {{CARD_PROMO_CHD}} {{CARD_PROMO_ADL}} card-going-back" data-calculated-fares="{{CALCULATED_FARES}}">
+                                    <!-- Filter options -->
+                                    <div class="hidden">
+                                        <span class="flight-cia">{{OP}}</span>                                
+                                        <span class="has-promo">{{HAS_PROMO}}</span>
+                                    </div>
+                                    <!-- Filter options -->
+                                    <label id="card-{{@index}}" for="flight-inbound-{{@index}}" class="cf">
+                                        <div class="td1 left select-card">
+                                            <label class="styleform-card">
+                                                <input type="radio" name="flight-inbound" id="flight-inbound-{{@index}}" value="{{@index}}">
+                                                <span>Selecionar</span>
+                                            </label>
+                                        </div>
+                                        <div class="td2 left">
+                                            <div class="card-flight-company">
+                                                <span class="title-voo">voo:</span>
+                                                <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="td3 left info-flight">
+                                            <div class="info-flight-card left">
+                                                <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                                                <p class="departure-time hide">{{DEPARTURE_TIME_BARE}}</p>
+                                            </div>
+                                            <div class="info-flight-card left">
+                                                <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                                                <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p><p class="duration hide">{{TOTAL_FLIGHT_DURATION_BARE}}</p>
+                                            </div>
+                                            <div class="info-flight-card left">
+                                                <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                                                <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip" data-title="{{ARRIVAL_END_LOCATION_NAME}}">{{ARRIVAL_END_LOCATION}}</a></p>
+                                            </div>
+                                            <div class="info-flight-card quebra left">
+                                                <span class="stop-count"><span class="legs" >{{STOPS_NUMBER}}</span>Parada(s)</span>
+                                            </div>
+                                        </div>
+                                        <div class="left option-children">
+                                            <p><img src="static/img/ico-adult-card.png" alt=""></p>
+                                            <p><img src="static/img/ico-children-card.png" alt=""></p>
+                                        </div>
+                                        <div class="td4 left destiny-children">
+                                            <div class="children">
+                                                <p>de</p>
+                                                <p id="price-money"><span>R$</span> <span>{{PRICE_MONEY}}</span><span class="cia-price hidden" >{{PRICE_MONEY_BARE}}</span><span></span></p>
+                                            </div>
+                                            <div class="children">
+                                                <p>de</p>
+                                                <p id="price-money"><span>R$</span> <span>{{PRICE_MONEY_INFANT}}</span><span class="cia-price hidden" >{{PRICE_MONEY_INFANT_BARE}}</span><span></span></p>
+                                            </div>
+                                        </div>
+                                        <div class="td5 left price-economy">
+                                            <div class="price-children">
+                                                <div class="price-milhas-facil left">
+                                                    <p class="text-promo"></p>
+                                                    <p id="price_milhasfacil"><span>R$</span> <span>{{PRICE_MILHASFACIL}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_BARE}}</span><span></span></p>
+                                                </div>
+                                                <div class="price-milhas-facil-save">
+                                                    <div class="result-economy">
+                                                        <p>economize</p>
+                                                        <p id="earn-money"><span>R$</span><span>{{EARN_MONEY}}</span><span class="earn-money hidden">{{EARN_MONEY_BARE}}</span> <span></span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                            <div class="price-children">
+                                                <div class="price-milhas-facil left">
+                                                    <p class="text-promo"></p>
+                                                    <p id="price_milhasfacil"><span>R$</span> <span>{{PRICE_MILHASFACIL_INFANT}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_INFANT_BARE}}</span><span></span></p>
+                                                </div>
+                                                <div class="price-milhas-facil-save">
+                                                    <div class="result-economy">
+                                                        <p>economize</p>
+                                                        <p id="earn-money"><span>R$</span><span>{{EARN_MONEY_CHD}}</span><span></span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <!-- div-card-details -->
+                                    <div class="div-card-details">
+                                        <div class="header-details">
+                                            <div class="{{CARD_CIA}} info-voo-details">
+                                                <span><strong>voo:</strong> {{FLIGHT_NUMBER}}</span>
+                                                <span><strong>{{STOPS_NUMBER}} parada(s):</strong> {{ESCALE}}</span>
+                                                <span><strong>Taxa de Emb.:</strong> R$ {{TAX}}</span>
+                                                <span><strong>Quantidade de Milhas:</strong> <span id="price-miles" class="price-miles" style="margin-left:5px">{{PRICE_MILES}} ADL</span> / <span id="price-miles-infant" class="price-miles-infant">{{PRICE_MILES_INFANT}} CHD</span></span>
+                                            </div>
+                                        </div>
+                                        <div id="container-details">
+                                            {{#CONNECTION}}
+                                            <div class="list-espera left">
+                                                <div class="espera left">
+                                                    <p>espera</p>
+                                                    <p>{{TIME_WAITING}} h</p>
+                                                </div>
+                                                <div class="info-voo-detalhe left">
+                                                    <span class="halt-one">
+                                                        <p>(<a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a>)</p>
+                                                        <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                    </span>
+                                                    <span class="number-flight-halt">
+                                                        <div style="line-height:13px !important; top:-6px; position: relative">
+                                                            {{#if IS_CONNECTION}}
+                                                                <p style="font-size: 9px">CONEXÃO</p>
+                                                            {{/if}}
+                                                            {{FLIGHT_NUMBER}}
+                                                        </div>
+                                                        <div>duração <span class="sort-duration" >{{FLIGHT_DURATION}} h</span></div>
+                                                    </span>
+                                                    <span class="halt-two">
+                                                        <p>(<a alt="{{ARRIVAL_LOCATION_NAME}}" data-title="{{ARRIVAL_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_LOCATION}}</a>)</p>
+                                                        <p>{{ARRIVAL_TIME}} h</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            {{/CONNECTION}}
+                                        </div>                
+                                    </div><!-- div-card-details -->  
+                                </div>
+                            {{else}}
+                                <!--==================-->
+                                <!-- card quando NAO houver crianças  -->
+                                <!--==================-->
+                                <div class="card-result {{CARD_PROMO}} {{CARD_CIA}} {{CARD_EXPENSIVE}} {{@index}} card-going-back" data-calculated-fares="{{CALCULATED_FARES}}" >
+                                    <!-- Filter options -->
+                                    <div class="hidden">
+                                        <span class="flight-cia">{{OP}}</span>
+                                        <span class="has-promo">{{HAS_PROMO}}</span>
+                                    </div>
+                                    <!-- Filter options -->
+                                    <label id="card-{{@index}}" for="flight-inbound-{{@index}}" class="cf">
+                                        <div class="td1 left select-card">
+                                            
+                                            <label class="styleform-card">
+                                                <input type="radio" name="flight-inbound" id="flight-inbound-{{@index}}" value="{{@index}}">
+                                                <span>Selecionar</span>
+                                            </label>
+                                        </div>
+                                        <div class="td2 left">
+                                            <div class="card-flight-company">
+                                                <span class="title-voo">voo:</span>
+                                                <span class="card-flight-number">{{FLIGHT_NUMBER}}</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="td3 left info-flight">
+                                            <div class="info-flight-card left">
+                                                <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                <p><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                                                <p class="departure-time hide">{{DEPARTURE_TIME_BARE}}</p>
+                                            </div>
+                                            <div class="info-flight-card left">
+                                                <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                                                <p class="info-duration">{{TOTAL_FLIGHT_DURATION}}</p><p class="duration hide">{{TOTAL_FLIGHT_DURATION_BARE}}</p>
+                                            </div>
+                                            <div class="info-flight-card left">
+                                                <p><span>{{ARRIVAL_END_TIME}}</span><span class="arrival-time hide">{{ARRIVAL_END_TIME_BARE}}</span> h</p>
+                                                <p><a alt="{{ARRIVAL_END_LOCATION_NAME}}" data-title="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_END_LOCATION}}</a></p>
+                                            </div>
+                                            <div class="info-flight-card quebra left">
+                                                <span class="stop-count"><span class="legs" >{{STOPS_NUMBER}}</span>Parada(s)</span>
+                                            </div>
+                                        </div>
+                                        <div class="td4 left destiny">
+                                            <p>de</p>
+                                            <p id="price-money"><span>R$</span> <span>{{PRICE_MONEY}}</span><span class="cia-price hidden" >{{PRICE_MONEY_BARE}}</span><span></span></p>
+                                        </div>
+                                        <div class="td5 left price-economy">
+                                            <div class="price-milhas-facil left">
+                                                <p class="text-promo"></p>
+                                                <p id="price_milhasfacil"><span>R$</span> <span>{{PRICE_MILHASFACIL}}</span><span class="price-milhasfacil hidden">{{PRICE_MILHASFACIL_BARE}}</span><span></span></p>
+                                            </div>
+                                            <div class="price-milhas-facil-save">
+                                                <div class="result-economy">
+                                                    <p>economize</p>
+                                                    <p id="earn-money"><span>R$</span><span>{{EARN_MONEY}}</span><span class="earn-money hidden">{{EARN_MONEY_BARE}}</span> <span></span></p>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </label>
+                                    <!-- div-card-details -->
+                                    <div class="div-card-details">
+                                        <div class="header-details">
+                                            <div class="{{CARD_CIA}} info-voo-details">
+                                                <span><strong>voo:</strong> {{FLIGHT_NUMBER}}</span>
+                                                <span><strong>{{STOPS_NUMBER}} parada(s):</strong> {{ESCALE}}</span>
+                                                <span><strong>Taxa de Emb.:</strong> R$ {{TAX}}</span>
+                                                <span><strong>Quantidade de Milhas:</strong> <span id="price-miles" class="price-miles" style="margin-left:5px">{{PRICE_MILES}}</span></span>
+                                            </div>
+                                        </div>                
+                                        <div id="container-details">
+                                            {{#CONNECTION}}
+                                            <div class="list-espera left">
+                                                <div class="espera left">
+                                                    <p>espera</p>
+                                                    <p>{{TIME_WAITING}} h</p>
+                                                </div>
+                                                <div class="info-voo-detalhe left">
+                                                    <span class="halt-one">
+                                                        <p>(<a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a>)</p>
+                                                        <p><span>{{DEPARTURE_TIME}}</span> h</p>
+                                                    </span>
+                                                    <span class="number-flight-halt">
+                                                        <div style="line-height:13px !important; top:-6px; position: relative">
+                                                            {{#if IS_CONNECTION}}
+                                                                <p style="font-size: 9px">CONEXÃO</p>
+                                                            {{/if}}
+                                                            {{FLIGHT_NUMBER}}
+                                                        </div>
+                                                        <div>duração <span class="sort-duration" >{{FLIGHT_DURATION}} h</span></div>
+                                                    </span>
+                                                    <span class="halt-two">
+                                                        <p>(<a alt="{{ARRIVAL_LOCATION_NAME}}" data-title="{{ARRIVAL_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_LOCATION}}</a>)</p>
+                                                        <p>{{ARRIVAL_TIME}} h</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            {{/CONNECTION}}
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/if}}
+                        </div>
+                    {{/INBOUND}}
+                </div>
+            </div><!-- List outbound -->
+        {{else}}
+            <div class="no-result-search">
+                Não foram encontrados registros para a pesquisa. Consulte novamente.
+            </div>
+        {{/if}}
+    </div>
+</div>
+
+<div id="md-overlay-pagamento"></div><!-- Fundo checkout -->

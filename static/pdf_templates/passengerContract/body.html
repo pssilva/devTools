@@ -1,0 +1,159 @@
+
+<div class="header">
+	<h1 align="center">TERMO DE AQUIESCÊNCIA DO PASSAGEIRO</h1>
+</div>
+
+<div id="container">
+	
+	<div class="text">
+		
+		<p>
+			As Partes signatárias do presente <b>TERMO DE AQUIESCÊNCIA DO PASSAGEIRO</b>, doravante simplesmente "Termo", 
+		</p>
+
+		<p>
+			de um lado, denominada <b>AGÊNCIA</b>, {{AGENCY_NAME}}, inscrita no CNPJ sob o nº. {{AGENCY_CNPJ}}, com endereço na {{AGENCY_FULL_ADDRESS}}, por seu representante legal abaixo-assinado;
+		</p>
+
+		<p>
+			e, de outro lado, denominado <b>PASSAGEIRO</b>, <b>{{MAIN_PASSENGER_FULL_NAME}}</b>, RG nº. {{MAIN_PASSENGER_RG}}, inscrito no CPF sob o nº. {{MAIN_PASSENGER_CPF}}; 
+		</p>
+
+		<p>CONSIDERANDO QUE:</p>
+
+		<p>- O <b>PASSAGEIRO</b> adquiriu, junto à <b>AGÊNCIA</b>, o(s) seguinte(s) bilhete(s) aéreo(s):</p>
+
+	</div>
+
+	
+	<table width="100%" border="1" class="table">
+    <tr>
+  		<th>Trecho</th>
+      <th>Cia.</th>
+      <th># Voo</th>
+      <th>Paradas</th> 
+      <th>Data</th>
+      <th>Origem</th>
+      <th>Destino</th>
+      <th>Duração</th> 
+      <th>Milhas</th>
+    </tr>
+    {{FLIGHT_TABLE}}
+	</table>
+
+	<br>
+
+	<table width="100%" border="1" class="table">
+		<tr>
+			<th>Trecho</th>
+			<th>Pax</th>
+			<th>LOC (PNR)</th>
+			<th>Nome</th>
+		</tr>
+		{{PASSENGERS_BLOCK}}
+	</table>
+	
+	<div class="text">
+		
+	<p>
+		- Referido(s) bilhete(s) foi(foram) emitido(s) pela <b>AGÊNCIA</b>, por meio da utilização de milhas/pontos de programas de fidelidade;
+	</p>
+
+	<p>têm entre si ajustadas as cláusulas que se seguem:</p>
+
+	<p>
+		1 – Por meio do presente instrumento, o <b>PASSAGEIRO</b> declara ter ciência de que o(s) bilhete(s) aéreo(s) adquirido(s) junto à <b>AGÊNCIA</b> foram emitidos com a utilização de milhas aéreas/pontos de programas de fidelidade, e que, em decorrência desta forma de emissão, a fruição do bilhete não terá o condão de acumular pontuação nos programas de fidelidade de titularidade do <b>PASSAGEIRO</b>.
+	</p>
+
+	<p>
+		2 – O <b>PASSAGEIRO</b> declara conhecer e concordar com o funcionamento das regras estipuladas acerca do cancelamento e reembolso dos bilhetes emitidos, a saber:
+	</p>
+
+	<div class="to-right-1">
+		<p>
+			2.1 <b>Azul – Linhas Aéreas Brasileiras:</b> os bilhetes poderão ser reembolsados em até 365 (trezentos e sessenta e cinco) dias após a emissão. Haverá cobrança de multa no valor de R$ {{PENALTY_AZUL_BEFORE}} para solicitações anteriores à data prevista do embarque, e R$ {{PENALTY_AZUL_AFTER}} para solicitações posteriores à data prevista do embarque.	
+		</p>
+		
+		<p>
+			2.2 <b>TAM – Linhas Aéreas:</b> os bilhetes poderão ser reembolsados em até 45 (quarenta e cinco) dias após a emissão. Haverá cobrança de multa no valor de R$ {{PENALTY_TAM_BEFORE}} para solicitações anteriores à data prevista do embarque e de R$ {{PENALTY_TAM_AFTER}} para solicitações posteriores à data prevista do embarque.
+		</p>
+				
+		<p>
+			2.3 <b>GOL – Linhas Aéreas Inteligentes:</b> os bilhetes poderão ser reembolsados em até 45 (quarenta e cinco) dias após a emissão. Haverá cobrança de multa no valor de R$ {{PENALTY_GOL_BEFORE}} para solicitações anteriores à data prevista do embarque. A companhia aérea reserva-se o direito de não reembolsar bilhetes cuja solicitação de reembolso tenha sido efetuada após a data prevista do embarque.
+		</p>
+	</div>
+	
+
+	<p>
+		Parágrafo único: O <b>PASSAGEIRO</b> declara, ainda, ter ciência de que o valor líquido de reembolso será igual ao valor total pago pelo(s) bilhete(s) (tarifa + taxas), subtraído do valor de multa cobrada.
+	</p>
+
+	<p>
+		3 – Mediante solicitação de cancelamento/reembolso do(s) bilhete(s) adquirido(s) junto à <b>AGÊNCIA</b>, o <b>PASSAGEIRO</b> receberá em dinheiro o valor líquido de reembolso em até 30 (trinta) dias após a solicitação, na hipótese de pagamento do(s) bilhete(s) em dinheiro. Caso o(s) bilhete(s) tenha(m) sido adquirido(s) via cartão de crédito, o valor líquido de reembolso será estornado para a operadora do cartão pela qual foi realizada a operação.
+	</p>
+
+	<p>
+		4 – O <b>PASSAGEIRO</b> declara ter ciência da impossibilidade de remarcação do bilhete adquirido.
+	</p>
+
+	<p>
+		Parágrafo único: Ressalvado o disposto neste Item 4, o <b>PASSAGEIRO</b> poderá solicitar o cancelamento/reembolso do bilhete adquirido junto à <b>AGÊNCIA</b>, e, em seguida, solicitar a emissão de novo bilhete, na nova data desejada. Nesse caso, o PASSAGEIRO deverá arcar com eventual diferença tarifária verificada entre os bilhetes, além da multa por cancelamento, nos termos dos itens 2.1, 2.2 e 2.3.
+	</p>
+
+	<p>
+		5 – Sem prejuízo das disposições constantes deste Termo, todas as demais regras concernentes aos bilhetes aéreos convencionais serão aplicadas ao bilhete adquirido pelo <b>PASSAGEIRO</b> junto à <b>AGÊNCIA</b> com a utilização de milhas/pontos de programas de fidelidade, incluindo, mas não se limitando a: disposições da Lei nº. 8.078/90 (Código de Defesa do Consumidor), normas da Agência Nacional de Avião Civil – ANAC e regulamentos internos de cada companhia aérea.
+	</p>
+
+	<p>
+		6 – Qualquer alteração das obrigações, direitos ou condições, ora pactuados, somente poderá ser procedida mediante a celebração de aditamento, assinado pelas Partes, que passará a integrar este Termo, para todos os fins e efeitos legais e de direito.
+	</p>
+
+	<p>
+		7 – Este Termo, uma vez firmado pelas Partes, constitui o acordo completo, final, irrevogável e irretratável entre elas, substituindo todos os entendimentos, compromissos, mensagem via e-mail ou fax, cartas, ou correspondências anteriores e em relação ao assunto objeto deste Contrato.
+	</p>
+
+	<p>
+		8 – Para processar e julgar qualquer demanda ou controvérsia decorrente deste Termo, as partes elegem o foro da comarca de {{AGENCY_CITY}}/{{AGENCY_STATE}}, com renúncia de qualquer outro, por mais privilegiado que seja.
+	</p>
+
+	<br><br><br>
+
+	<p>
+		{{AGENCY_CITY}} - {{AGENCY_STATE}}, {{EXTENDED_DATE}}.
+	</p>
+
+	<br><br><br>
+
+	<table class="sign">
+		<tr>
+			<td>
+				<table> 
+					<tr>
+						<td width="400px" height="70px" class="fulfilled">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center"><b>{{AGENCY_EMPLOYEE}}</b></td>
+					</tr>
+					<tr>
+						<td align="center"><b>AGÊNCIA</b></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table> 
+					<tr>
+						<td width="400px" height="70px" class="fulfilled">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center"><b>{{MAIN_PASSENGER_FULL_NAME}}</b></td>
+					</tr>
+					<tr>
+						<td align="center"><b>PASSAGEIRO</b></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	</div>
+</div>

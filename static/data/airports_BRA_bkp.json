@@ -1,0 +1,2034 @@
+[
+{
+    "code": "AAX",
+    "lat": "-19.5603",
+    "lon": "-46.9653",
+    "name": "Aeroporto de Romeu Zuma",
+    "display_name": "Arax\u00e1 - (AAX)",
+    "city": "Arax\u00e1",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511034",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBAX",
+    "tokens": [
+        "AAX",
+        "Romeu Zuma",
+        "Araxa"
+    ]
+  },
+  {
+    "code": "AFL",
+    "lat": "-9.8661",
+    "lon": "-56.1044",
+    "name": "Aeroporto de Alta Floresta",
+	"display_name": "Alta Floresta - (AFL)",
+    "city": "Alta Floresta",
+    "state": "Mato Grosso",
+    "country": "Brazil",
+    "woeid": "12511017",
+    "tz": "America\/Campo_Grande",
+    "icao": "SBAT",
+    "tokens": [
+        "AFL",
+        "Alta Floresta"
+    ]
+  },
+  {
+    "code": "AJU",
+    "lat": "-10.985",
+    "lon": "-37.0733",
+    "name": "Aeroporto de Santa Maria",
+	"display_name": "Aracaju - (AJU)",
+    "city": "Aracaju",
+    "state": "Sergipe",
+    "country": "Brazil",
+    "woeid": "12511305",
+    "tz": "America\/Belem",
+    "icao": "SBAR",
+    "tokens": [
+        "AJU",
+        "Santa Maria",
+        "Aracaju"
+    ]
+  },
+  {
+    "code": "ARU",
+    "lat": "-21.1436",
+    "lon": "-50.4261",
+    "name": "Aeroporto de Ara\u00e7atuba",
+	"display_name": "Ara\u00e7atuba - (ARU)",
+    "city": "Ara\u00e7atuba",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511026",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBAU",
+    "tokens": [
+        "ARU",
+        "Ara\u00e7atuba",
+        "sao paulo"
+    ]
+  },
+  {
+    "code": "ATM",
+    "lat": "-3.2506",
+    "lon": "-52.2517",
+    "name": "Aeroporto de Altamira",
+	"display_name": "Altamira - (ATM)",
+    "city": "Altamira",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "12511018",
+    "tz": "America\/Manaus",
+    "icao": "SBHT",
+    "tokens": [
+        "ATM",
+        "Altamira"
+    ]
+  },
+  {
+    "code": "AUX",
+    "lat": "-7.2281",
+    "lon": "-48.2403",
+    "name": "Aeroporto de Araguaina",
+	"display_name": "Araguaina - (AUX)",
+    "city": "Araguaina",
+    "state": "Tocantins",
+    "country": "Brazil",
+    "woeid": "12511029",
+    "tz": "America\/Araguaina",
+    "icao": "",
+    "tokens": [
+        "AUX",
+        "Araguaina"
+    ]
+  },
+  {
+    "code": "JTC",
+    "lat": "-22.345",
+    "lon": "-49.0531",
+    "name": "Aeroporto de Bauru",
+	"display_name": "Bauru - (JTC)",
+    "city": "Bauru",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511049",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBBU",
+    "tokens": [
+        "JTC",
+        "Bauru",
+        "Arealva"
+    ]
+  },
+  {
+    "code": "BEL",
+    "lat": "-1.3844",
+    "lon": "-48.4783",
+    "name": "Aeroporto Internacional de Val de Caes",
+	"display_name": "Belém - (BEL)",
+    "city": "Belém",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "12511369",
+    "tz": "America\/Belem",
+    "icao": "SBBE",
+    "tokens": [
+        "BEL",
+        "Val de Caes",
+        "Belem"
+    ]
+  },
+  {
+    "code": "BPS",
+    "lat": "-16.4406",
+    "lon": "-39.0833",
+    "name": "Aeroporto de Porto Seguro",
+	"display_name": "Porto Seguro - (BPS)",
+    "city": "Porto Seguro",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "12511284",
+    "tz": "America\/Bahia",
+    "icao": "SBPS",
+    "tokens": [
+        "BPS",
+        "Porto Seguro"
+    ]
+  },
+  {
+    "code": "BRA",
+    "lat": "-12.0792",
+    "lon": "-45.01",
+    "name": "Aeroporto de Barreiras",
+	"display_name": "Barreiras - (BRA)",
+    "city": "Barreiras",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "12511045",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "BRA",
+        "Barreiras"
+    ]
+  },
+  {
+    "code": "BSB",
+    "lat": "-15.8622",
+    "lon": "-47.9122",
+    "name": "Aeroporto Internacional Juscelino Kubitschek",
+	"display_name": "Brasília - (BSB)",
+    "city": "Brasília",
+    "state": "Distrito Federal",
+    "country": "Brazil",
+    "woeid": "12511058",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBBR",
+    "tokens": [
+        "BSB",
+        "Juscelino Kubitschek",
+        "Brasília",
+        "Distrito Federal"
+    ]
+  },
+  {
+    "code": "BVB",
+    "lat": "2.8417",
+    "lon": "-60.6917",
+    "name": "Aeroporto Internacional de Boa Vista",
+	"display_name": "Boa Vista - (BVB)",
+    "city": "Boa Vista",
+    "state": "Roraima",
+    "country": "Brazil",
+    "woeid": "12511054",
+    "tz": "America\/Recife",
+    "icao": "SBBV",
+    "tokens": [
+        "BVB",
+        "Boa Vista",
+        "Roraima"
+    ]
+  },
+  {
+    "code": "BYO",
+    "lat": "-21.229444",
+    "lon": "-56.456111",
+    "name": "Aeroporto Regional de Bonito",
+    "display_name": "Bonito - (BYO)",
+    "city": "Bonito",
+    "state": "Mato Grosso do Sul",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBDB",
+    "tokens": [
+        "BYO",
+        "Bonito"
+    ]
+  },
+  {
+    "code": "CFB",
+    "lat": "-22.920942",
+    "lon": "-42.071381",
+    "name": "Aeroporto de Cabo Frio",
+    "display_name": "Cabo Frio - (CFB)",
+    "city": "Cabo Frio",
+    "state": "Rio de Janeiro",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBCB",
+    "tokens": [
+        "CFB",
+        "Cabo Frio"
+    ]
+  },
+  {
+    "code": "CLV",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Caldas Novas",
+    "display_name": "Caldas Novas - (CLV)",
+    "city": "Caldas Novas",
+    "state": "Goiás",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBCN",
+    "tokens": [
+        "CLV",
+        "Caldas Novas"
+    ]
+  },
+  {
+    "code": "RVD",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Rio Verde",
+    "display_name": "Rio Verde - (CLV)",
+    "city": "Rio Verde",
+    "state": "Goiás",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SWLC",
+    "tokens": [
+        "RVD",
+        "Rio Verde"
+    ]
+  },
+  {
+    "code": "CAW",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Campos dos Goytacazes",
+    "display_name": "Campos dos Goytacazes - (CAW)",
+    "city": "Campos dos Goytacazes",
+    "state": "Rio de Janeiro",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBCP",
+    "tokens": [
+        "CAW",
+        "Campos dos Goytacazes"
+    ]
+  },
+  {
+    "code": "CIZ",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto Regional de Coari",
+    "display_name": "Coari - (CIZ)",
+    "city": "Coari",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SWKO",
+    "tokens": [
+        "CIZ",
+        "Coari"
+    ]
+  },
+  {
+    "code": "ERN",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto Regional de Eirunepé",
+    "display_name": "Eirunepé - (ERN)",
+    "city": "Eirunepé",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SWEI",
+    "tokens": [
+        "ERN",
+        "Eirunepe"
+    ]
+  },
+  {
+    "code": "HUW",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Humaitá",
+    "display_name": "Humaitá - (HUW)",
+    "city": "Humaitá",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SWHT",
+    "tokens": [
+        "HUW",
+        "Humaita"
+    ]
+  },
+  {
+    "code": "IPN",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto da Usiminas (Ipatinga)",
+    "display_name": "Ipatinga - (IPN)",
+    "city": "Santana do Paraíso",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBIP",
+    "tokens": [
+        "IPN",
+        "Ipatinga"
+    ]
+  },
+  {
+    "code": "ITB",
+    "lat": "-4.243533",
+    "lon": "-56.002772",
+    "name": "Aeroporto de Itaituba",
+    "display_name": "Itaituba - (ITB)",
+    "city": "Itaituba",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBIH",
+    "tokens": [
+        "ITB",
+        "Itaituba"
+    ]
+  },
+  {
+    "code": "POJ",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Patos de Minas",
+    "display_name": "Patos de Minas - (POJ)",
+    "city": "Patos de Minas",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SNPD",
+    "tokens": [
+        "POJ",
+        "Patos de Minas"
+    ]
+  },
+  {
+    "code": "PAV",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Paulo Afonso",
+    "display_name": "Paulo Afonso - (PAV)",
+    "city": "Paulo Afonso",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBUF",
+    "tokens": [
+        "PAV",
+        "Paulo Afonso"
+    ]
+  },
+  {
+    "code": "TBT",
+    "lat": "-4.255556",
+    "lon": "-69.935556",
+    "name": "Aeroporto Internacional de Tabatinga",
+    "display_name": "Tabatinga - (TBT)",
+    "city": "Tabatinga",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBTT",
+    "tokens": [
+        "TBT",
+        "Tabatinga"
+    ]
+  },
+  {
+    "code": "TFF",
+    "lat": "-3.380278",
+    "lon": "-64.725278",
+    "name": "Aeroporto Regional de Tefé",
+    "display_name": "Tefé - (TFF)",
+    "city": "Tefé",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBTF",
+    "tokens": [
+        "TFF",
+        "Tefe"
+    ]
+  },
+  {
+    "code": "VAG",
+    "lat": "-21.5925",
+    "lon": "-45.474444",
+    "name": "Aeroporto de Varginha",
+    "display_name": "Varginha - (VAG)",
+    "city": "Varginha",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "VAG",
+        "Varginha"
+    ]
+  },
+  {
+    "code": "BVH",
+    "lat": "-12.7014",
+    "lon": "-60.0931",
+    "name": "Aeroporto Brigadeiro Camarão",
+	"display_name": "Vilhena - (BVH)",
+    "city": "Vilhena",
+    "state": "Rondonia",
+    "country": "Brazil",
+    "woeid": "12511373",
+    "tz": "America\/Cuiaba",
+    "icao": "",
+    "tokens": [
+        "BVH",
+        "Brigadeiro Camarão",
+        "Vilhena",
+        "Rondonia"
+    ]
+  },
+  {
+    "code": "CAC",
+    "lat": "-25.0017",
+    "lon": "-53.5014",
+    "name": "Aeroporto de Cascavel",
+	"display_name": "Cascavel - (CAC)",
+    "city": "Cascavel",
+    "state": "Paraná",
+    "country": "Brazil",
+    "woeid": "12511085",
+    "tz": "America\/Fortaleza",
+    "icao": "",
+    "tokens": [
+        "CAC",
+        "Cascavel"
+    ]
+  },
+  {
+    "code": "CCM",
+    "lat": "-28.7239",
+    "lon": "-49.4208",
+    "name": "Aeroporto de Criciuma",
+	"display_name": "Forquilhinha - (CCM)",
+    "city": "Forquilhinha",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511104",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "CCM",
+        "Criciuma",
+        "Forquilhinha",
+        "Santa Catarina"
+    ]
+  },
+  {
+    "code": "CFC",
+    "lat": "-26.7775",
+    "lon": "-51.0175",
+    "name": "Aeroporto de Ca\u00e7ador",
+	"display_name": "Ca\u00e7ador - (CFC)",
+    "city": "Ca\u00e7ador",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12523508",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "CFC",
+        "Aeroporto de Ca\u00e7ador",
+        "Ca\u00e7ador",
+        "Santa Catarina"
+    ]
+  },
+  {
+    "code": "CGB",
+    "lat": "-15.6497",
+    "lon": "-56.1169",
+    "name": "Aeroporto Internacional Marechal Rondon",
+	"display_name": "Cuiabá - (CGB)",
+    "city": "Cuiabá",
+    "state": "Mato Grosso",
+    "country": "Brazil",
+    "woeid": "12511228",
+    "tz": "America\/Cuiaba",
+    "icao": "SBCY",
+    "tokens": [
+        "CGB",
+        "Marechal Rondon",
+        "Cuiaba"
+    ]
+  },
+  {
+    "code": "CGH",
+    "lat": "-23.6285",
+    "lon": "-46.6589",
+    "name": "Aeroporto Internacional de Congonhas",
+	"display_name": "São Paulo - Congonhas - (CGH)",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "23388212",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBSP",
+    "tokens": [
+        "CGH",
+        "Congonhas",
+        "sao paulo"
+    ]
+  },
+  {
+    "code": "SAO",
+    "lat": "-23.6285",
+    "lon": "-46.6589",
+    "name": "Todos os Aeroportos - São Paulo",
+    "display_name": "São Paulo - Todos Aeroportos - (SAO)",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "23388212",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBSP",
+    "tokens": [
+        "SAO",
+        "sao paulo"
+    ]
+  },
+  {
+    "code": "CGR",
+    "lat": "-20.475",
+    "lon": "-54.6736",
+    "name": "Aeroporto Internacional de Campo Grande",
+	"display_name": "Campo Grande - (CGR)",
+    "city": "Campo Grande",
+    "state": "Mato Grosso do Sul",
+    "country": "Brazil",
+    "woeid": "12511071",
+    "tz": "America\/Campo_Grande",
+    "icao": "SBCG",
+    "tokens": [
+        "CGR",
+        "Campo Grande"
+    ]
+  },
+  {
+    "code": "CKS",
+    "lat": "-6.1175",
+    "lon": "-50.0036",
+    "name": "Aeroporto de Carajás",
+	"display_name": "Carajás - (CKS)",
+    "city": "Carajás",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "12511077",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "CKS",
+        "Carajas"
+    ]
+  },
+  {
+    "code": "CMG",
+    "lat": "-19.0055",
+    "lon": "-57.7055",
+    "name": "Aeroporto Internacional Corumbá",
+	"display_name": "Corumbá - (CMG)",
+    "city": "Corumbá",
+    "state": "Mato Grosso do Sul",
+    "country": "Brazil",
+    "woeid": "12511101",
+    "tz": "America\/Campo_Grande",
+    "icao": "SBCR",
+    "tokens": [
+        "CMG",
+        "Corumba"
+    ]
+  },
+  {
+    "code": "CNF",
+    "lat": "-19.6242",
+    "lon": "-43.9717",
+    "name": "Aeroporto Internacional Tancredo Neves",
+	"display_name": "Belo Horizonte - Confins - (CNF)",
+    "city": "Confins",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511339",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBCF",
+    "tokens": [
+        "CNF",
+        "Tancredo Neves",
+        "Confins",
+		"Belo Horizonte"
+    ]
+  },
+  {
+    "code": "CPV",
+    "lat": "-7.2689",
+    "lon": "-35.8947",
+    "name": "Aeroporto Presidente João Suassuna",
+	"display_name": "Campina Grande - (CPV)",
+    "city": "Campina Grande",
+    "state": "Paraíba",
+    "country": "Brazil",
+    "woeid": "12511202",
+    "tz": "America\/Belem",
+    "icao": "SBKG",
+    "tokens": [
+        "CPV",
+        "Presidente João Suassuna",
+        "Campina Grande"
+    ]
+  },
+  {
+    "code": "CWB",
+    "lat": "-25.5275",
+    "lon": "-49.1731",
+    "name": "Aeroporto Internacional Afonso Pena",
+	"display_name": "São José dos Pinhais - (CWB)",
+    "city": "São José dos Pinhais",
+    "state": "Paraná",
+    "country": "Brazil",
+    "woeid": "12511012",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBCT",
+    "tokens": [
+        "CWB",
+        "Afonso Pena",
+        "Sao Jose dos Pinhais",
+        "Parana"
+    ]
+  },
+  {
+    "code": "CXJ",
+    "lat": "-29.1961",
+    "lon": "-51.1906",
+    "name": "Aeroporto Campo dos Bugres",
+	"display_name": "Caxias do Sul - (CXJ)",
+    "city": "Caxias do Sul",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511068",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "CXJ",
+        "Campo dos Bugres",
+        "Caxias do Sul"
+    ]
+  },
+  {
+    "code": "CZS",
+    "lat": "-7.5994",
+    "lon": "-72.7697",
+    "name": "Aeroporto Internacional Cruzeiro do Sul",
+	"display_name": "Cruzeiro Do Sul - (CZS)",
+    "city": "Cruzeiro Do Sul",
+    "state": "Acre",
+    "country": "Brazil",
+    "woeid": "12511105",
+    "tz": "America\/Rio_Branco",
+    "icao": "",
+    "tokens": [
+        "CZS",
+        "Cruzeiro Do Sul"
+    ]
+  },
+  {
+    "code": "DOU",
+    "lat": "-22.1978",
+    "lon": "-54.9225",
+    "name": "Aeroporto de Dourados",
+	"display_name": "Dourados - (DOU)",
+    "city": "Dourados",
+    "state": "Mato Grosso do Sul",
+    "country": "Brazil",
+    "woeid": "12511113",
+    "tz": "America\/Campo_Grande",
+    "icao": "",
+    "tokens": [
+        "DOU",
+        "Dourados"
+    ]
+  },
+  {
+    "code": "ERM",
+    "lat": "-27.6608",
+    "lon": "-52.2756",
+    "name": "Aeroporto Comandante Kraemer",
+	"display_name": "Erechim - (ERM)",
+    "city": "Erechim",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511118",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "ERM",
+        "Comandante Kraemer",
+        "Erechim"
+    ]
+  },
+  {
+    "code": "FEN",
+    "lat": "-3.8519",
+    "lon": "-32.4244",
+    "name": "Aeroporto Fernando de Noronha",
+	"display_name": "Vila dos Rem\u00e9dios - (FEN)",
+    "city": "Vila dos Rem\u00e9dios",
+    "state": "Pernambuco",
+    "country": "Brazil",
+    "woeid": "12511145",
+    "tz": "America\/Recife",
+    "icao": "",
+    "tokens": [
+        "FEN",
+        "Fernando de Noronha",
+        "Vila dos Remedios"
+    ]
+  },
+  {
+    "code": "FLN",
+    "lat": "-27.6697",
+    "lon": "-48.5517",
+    "name": "Aeroporto Internacional Hercilio Luz",
+	"display_name": "Florianópolis - (FLN)",
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511173",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "FLN",
+        "Hercilio Luz",
+        "Florianopolis"
+    ]
+  },
+  {
+    "code": "FOR",
+    "lat": "-3.7758",
+    "lon": "-38.5322",
+    "name": "Aeroporto Internacional Pinto Martins",
+	"display_name": "Fortaleza - (FOR)",
+    "city": "Fortaleza",
+    "state": "Ceará",
+    "country": "Brazil",
+    "woeid": "12511272",
+    "tz": "America\/Belem",
+    "icao": "SBFZ",
+    "tokens": [
+        "FOR",
+        "Pinto Martins",
+        "Fortaleza"
+    ]
+  },
+  {
+    "code": "FRC",
+    "lat": "-20.5897",
+    "lon": "-47.3819",
+    "name": "Aeroporto de França",
+	"display_name": "São Paulo - França - (FRC)",
+    "city": "França",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511149",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "FRC",
+        "Franca"
+    ]
+  },
+  {
+    "code": "GEL",
+    "lat": "-28.2808",
+    "lon": "-54.1683",
+    "name": "Aeroporto Santo Ângelo",
+	"display_name": "Santo Ângelo - (GEL)",
+    "city": "Santo Ângelo",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511309",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "GEL",
+        "Santo Angelo"
+    ]
+  },
+  {
+    "code": "GIG",
+    "lat": "-22.8094",
+    "lon": "-43.25",
+    "name": "Aeroporto Internacional Antônio Carlos Jobim",
+	"display_name": "Rio de Janeiro - (GIG)",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "country": "Brazil",
+    "woeid": "12511292",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBGL",
+    "tokens": [
+        "GIG",
+        "Antonio Carlos Jobim",
+        "Rio de Janeiro"
+    ]
+  },
+  {
+    "code": "GRU",
+    "lat": "-23.435",
+    "lon": "-46.4728",
+    "name": "Aeroporto Internacional Governador André Franco Montoro",
+	"display_name": "São Paulo - Guarulhos - (GRU)",
+    "city": "Guarulhos",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511170",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBGR",
+    "tokens": [
+        "GRU",
+        "Guarulhos",
+        "sao paulo"
+    ]
+  },
+  {
+    "code": "GVR",
+    "lat": "-18.8958",
+    "lon": "-41.9856",
+    "name": "Aeroporto Governador Valadares",
+	"display_name": "Governador Valadares - (GVR)",
+    "city": "Governador Valadares",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511160",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "GVR",
+        "Governador Valadares"
+    ]
+  },
+  {
+    "code": "GYN",
+    "lat": "-16.6294",
+    "lon": "-49.2261",
+    "name": "Aeroporto Santa Genoveva",
+	"display_name": "Goiânia - (GYN)",
+    "city": "Goiânia",
+    "state": "Goiás",
+    "country": "Brazil",
+    "woeid": "12511301",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "GYN",
+        "Santa Genoveva",
+        "Goiania"
+    ]
+  },
+  {
+    "code": "IGU",
+    "lat": "-25.5958",
+    "lon": "-54.4864",
+    "name": "Aeroporto Internacional Cataratas",
+	"display_name": "Foz do Iguaçu - (IGU)",
+    "city": "Foz do Iguaçu",
+    "state": "Paraná",
+    "country": "Brazil",
+    "woeid": "12511087",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBFI",
+    "tokens": [
+        "IGU",
+        "Aeroporto Internacional Cataratas",
+        "Foz do Iguaçu",
+        "Parana"
+    ]
+  },
+  {
+    "code": "IMP",
+    "lat": "-5.5303",
+    "lon": "-47.4669",
+    "name": "Aeroporto Prefeito Renato Moreira",
+	"display_name": "Imperatriz - (IMP)",
+    "city": "Imperatriz",
+    "state": "Maranhão",
+    "country": "Brazil",
+    "woeid": "12511179",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "IMP",
+        "Prefeito Renato Moreira",
+        "Imperatriz"
+    ]
+  },
+  {
+    "code": "IOS",
+    "lat": "-14.8142",
+    "lon": "-39.0331",
+    "name": "Aeroporto Jorge Amado",
+	"display_name": "Ilh\u00e9us - (IOS)",
+    "city": "Ilh\u00e9us",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "12511178",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "IOS",
+        "Jorge Amado",
+        "Ilheus"
+    ]
+  },
+  {
+    "code": "IPN",
+    "lat": "-19.47",
+    "lon": "-42.4875",
+    "name": "Aeroporto Usiminas",
+	"display_name": "Santana do Para\u00edso - (IPN)",
+    "city": "Santana do Para\u00edso",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511364",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "IPN",
+        "Usiminas",
+        "Santana do Paraiso"
+    ]
+  },
+  {
+    "code": "JCB",
+    "lat": "-27.1722",
+    "lon": "-51.5511",
+    "name": "Aeroporto Joaçaba",
+	"display_name": "Joa\u00e7aba - (JCB)",
+    "city": "Joa\u00e7aba",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511200",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "JCB",
+        "Joa\u00e7aba",
+        "Santa Catarina"
+    ]
+  },
+  {
+    "code": "JDF",
+    "lat": "-21.7925",
+    "lon": "-43.385",
+    "name": "Aeroporto Francisco de Assis",
+	"display_name": "Juiz de Fora - (JDF)",
+    "city": "Juiz de Fora",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511151",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "JDF",
+        "Francisco de Assis",
+        "Juiz de Fora"
+    ]
+  },
+  {
+    "code": "JDO",
+    "lat": "-7.2181",
+    "lon": "-39.2706",
+    "name": "Aeroporto Cariri Regional",
+	"display_name": "Juazeiro do Norte - (JDO)",
+    "city": "Juazeiro do Norte",
+    "state": "Ceará",
+    "country": "Brazil",
+    "woeid": "12511080",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "JDO",
+        "Cariri Regional",
+        "Juazeiro do Norte"
+    ]
+  },
+  {
+    "code": "JOI",
+    "lat": "-26.223",
+    "lon": "-48.8046",
+    "name": "Aeroporto Lauro Carneiro de Loyola",
+	"display_name": "Joinville - (JOI)",
+    "city": "Joinville",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511203",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "JOI",
+        "Aeroporto Lauro Carneiro de Loyola",
+        "Joinville",
+        "Santa Catarina"
+    ]
+  },
+  {
+    "code": "JPA",
+    "lat": "-7.1481",
+    "lon": "-34.9506",
+    "name": "Aeroporto Internacional Presidente Castro Pinto",
+	"display_name": "João Pessoa - (JPA)",
+    "city": "João Pessoa",
+    "state": "Paraiba",
+    "country": "Brazil",
+    "woeid": "12511287",
+    "tz": "America\/Belem",
+    "icao": "SBJP",
+    "tokens": [
+        "JPA",
+        "Joao Pessoa",
+        "Paraiba"
+    ]
+  },
+  {
+    "code": "JPR",
+    "lat": "-10.8703",
+    "lon": "-61.8461",
+    "name": "Aeroporto Ji Paraná",
+	"display_name": "Ji-Paran\u00e1 - (JPR)",
+    "city": "Ji-Paran\u00e1",
+    "state": "Rondonia",
+    "country": "Brazil",
+    "woeid": "12511198",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "JPR",
+        "Ji-Parana"
+    ]
+  },
+  {
+    "code": "LAJ",
+    "lat": "-27.7831",
+    "lon": "-50.2825",
+    "name": "Aeroporto de Lajes",
+	"display_name": "Lages - (LAJ)",
+    "city": "Lages",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511208",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "LAJ",
+        "Lages"
+    ]
+  },
+  {
+    "code": "LDB",
+    "lat": "-23.3297",
+    "lon": "-51.1361",
+    "name": "Aeroporto de Londrina",
+	"display_name": "Londrina - (LDB)",
+    "city": "Londrina",
+    "state": "Paraná",
+    "country": "Brazil",
+    "woeid": "12511215",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "LDB",
+        "Londrina"
+    ]
+  },
+  {
+    "code": "MAB",
+    "lat": "-5.3533",
+    "lon": "-49.1336",
+    "name": "Aeroporto de Marabá",
+	"display_name": "Marab\u00e1 - (MAB)",
+    "city": "Marab\u00e1",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "12511224",
+    "tz": "America\/Araguaina",
+    "icao": "",
+    "tokens": [
+        "MAB",
+        "Maraba"
+    ]
+  },
+  {
+    "code": "MAO",
+    "lat": "-3.0392",
+    "lon": "-60.0469",
+    "name": "Aeroporto Internacional Eduardo Gomes",
+	"display_name": "Manáus - (MAO)",
+    "city": "Manaus",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "12511115",
+    "tz": "America\/Manaus",
+    "icao": "KMAO",
+    "tokens": [
+        "MAO",
+        "Eduardo Gomes",
+        "Manaus"
+    ]
+  },
+  {
+    "code": "MCP",
+    "lat": "0.0525",
+    "lon": "-51.0675",
+    "name": "Aeroporto Internacional de Macapá",
+	"display_name": "Macap\u00e1 - (MCP)",
+    "city": "Macap\u00e1",
+    "state": "Amapá",
+    "country": "Brazil",
+    "woeid": "12511218",
+    "tz": "America\/Manaus",
+    "tokens": [
+        "MCP",
+        "Macapa"
+    ]
+  },
+  {
+    "code": "MCZ",
+    "lat": "-9.5117",
+    "lon": "-35.8",
+    "name": "Aeroporto Internacional Zumbi dos Palmares",
+	"display_name": "Maceió - (MCZ)",
+    "city": "Maceió",
+    "state": "Alagoas",
+    "country": "Brazil",
+    "woeid": "12511069",
+    "tz": "America\/Belem",
+    "icao": "KMCZ",
+    "tokens": [
+        "MCZ",
+        "Zumbi dos Palmares",
+        "Maceio"
+    ]
+  },
+  {
+    "code": "MEA",
+    "lat": "-22.3422",
+    "lon": "-41.7633",
+    "name": "Aeroporto de Macaé",
+	"display_name": "Macaé - (MEA)",
+    "city": "Macaé",
+    "state": "Rio de Janeiro",
+    "country": "Brazil",
+    "woeid": "12511217",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "MEA",
+        "Macaé"
+    ]
+  },
+  {
+    "code": "MGF",
+    "lat": "-23.4394",
+    "lon": "-51.9061",
+    "name": "Aeroporto de Maringá",
+	"display_name": "Maringá - (MGF)",
+    "city": "Maringá",
+    "state": "Paraná",
+    "country": "Brazil",
+    "woeid": "12511231",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "MGF",
+        "Maringa",
+        "Parana"
+    ]
+  },
+  {
+    "code": "MII",
+    "lat": "-22.1953",
+    "lon": "-49.9261",
+    "name": "Aeroporto Dr. Gastao Vidigal",
+	"display_name": "Marilia - (MII)",
+    "city": "Marilia",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511229",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "MII",
+        "Marilia"
+    ]
+  },
+  {
+    "code": "MOC",
+    "lat": "-16.7044",
+    "lon": "-43.8203",
+    "name": "Aeroporto Montes Claros",
+	"display_name": "Montes Claros - (MOC)",
+    "city": "Montes Claros",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511238",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "MOC",
+        "Montes Claros"
+    ]
+  },
+  {
+    "code": "MVS",
+    "lat": "-18.0492",
+    "lon": "-39.8653",
+    "name": "Aeroporto Max Feffer",
+	"display_name": "Mucuri - (MVS)",
+    "city": "Mucuri",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "456351",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "MVS",
+        "Max Feffer",
+        "Mucuri",
+        "Bahia"
+    ]
+  },
+  {
+    "code": "NAT",
+    "lat": "-5.84694",
+    "lon": "-35.2145",
+    "name": "Aeroporto Internacional Augusto Severo",
+	"display_name": "Natal - (NAT)",
+    "city": "Natal",
+    "state": "Rio Grande do Norte",
+    "country": "Brazil",
+    "woeid": "12511038",
+    "tz": "America\/Belem",
+    "icao": "SBNT",
+    "tokens": [
+        "NAT",
+        "Augusto Severo",
+        "Natal"
+    ]
+  },
+  {
+    "code": "NVT",
+    "lat": "-26.8797",
+    "lon": "-48.6481",
+    "name": "Aeroporto Internacional Ministro Victor Konder",
+	"display_name": "Navegantes - (NVT)",
+    "city": "Navegantes",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511240",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "NVT",
+        "Ministro Victor Konder",
+        "Navegantes"
+    ]
+  },
+  {
+    "code": "OPS",
+    "lat": "-11.8733",
+    "lon": "-55.5733",
+    "name": "Aeroporto de Sinop",
+	"display_name": "Sinop - (OPS)",
+    "city": "Sinop",
+    "state": "Mato Grosso",
+    "country": "Brazil",
+    "woeid": "12511328",
+    "tz": "America\/Campo_Grande",
+    "icao": "",
+    "tokens": [
+        "OPS",
+        "Sinop",
+        "Mato Grosso"
+    ]
+  },
+  {
+    "code": "ORJ",
+    "lat": "4.71667",
+    "lon": "-60.0333",
+    "name": "Aeroporto Orinduik",
+	"display_name": "Rera - Orinduik - (ORJ)",
+    "city": "Rera",
+    "state": "Roraima",
+    "country": "Brazil",
+    "woeid": "12524536",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "ORJ",
+        "Orinduik",
+        "Rera",
+        "Roraima"
+    ]
+  },
+  {
+    "code": "OAL",
+    "lat": "",
+    "lon": "",
+    "name": "Aeroporto de Cacoal",
+    "display_name": "Aeroporto de Cacoal - (OAL)",
+    "city": "Cacoal",
+    "state": "Rondônia",
+    "country": "Brazil",
+    "woeid": "12524536",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "OAL",
+        "Cacoal",
+        "Rondonia"
+    ]
+  },
+  {
+    "code": "PET",
+    "lat": "-31.7181",
+    "lon": "-52.3244",
+    "name": "Aeroporto de Pelotas",
+	"display_name": "Pelotas - (PET)",
+    "city": "Pelotas",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511267",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "PET",
+        "Pelotas"
+    ]
+  },
+  {
+    "code": "PFB",
+    "lat": "-28.2447",
+    "lon": "-52.3317",
+    "name": "Aeroporto Lauro Kurtz",
+	"display_name": "Passo Fundo - (PFB)",
+    "city": "Passo Fundo",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511209",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "PFB",
+        "Lauro Kurtz",
+        "Passo Fundo"
+    ]
+  },
+  {
+    "code": "PIN",
+    "lat": "-2.6658",
+    "lon": "-56.7822",
+    "name": "Aeroporto de Parintins",
+	"display_name": "Parintins - (PIN)",
+    "city": "Parintins",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "12511260",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "PIN",
+        "Parintins"
+    ]
+  },
+  {
+    "code": "PLU",
+    "lat": "-19.8517",
+    "lon": "-43.9508",
+    "name": "Aeroporto da Pampulha",
+	"display_name": "Belo Horizonte - Pampulha - (PLU)",
+    "city": "Belo Horizonte",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511257",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBBH",
+    "tokens": [
+        "PLU",
+        "Pampulha",
+        "Belo Horizonte"
+    ]
+  },
+  {
+    "code": "PMW",
+    "lat": "-10.2417",
+    "lon": "-48.3528",
+    "name": "Aeroporto de Palmas",
+	"display_name": "Palmas - (PMW)",
+    "city": "Palmas",
+    "state": "Tocantins",
+    "country": "Brazil",
+    "woeid": "12523650",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "PMW",
+        "Palmas"
+    ]
+  },
+  {
+    "code": "PNZ",
+    "lat": "-9.3647",
+    "lon": "-40.5658",
+    "name": "Aeroporto Senador Nilo Coelho",
+	"display_name": "Petrolina - (PNZ)",
+    "city": "Petrolina",
+    "state": "Pernambuco",
+    "country": "Brazil",
+    "woeid": "12511269",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "PNZ",
+        "Senador Nilo Coelho",
+        "Petrolina"
+    ]
+  },
+  {
+    "code": "POA",
+    "lat": "-29.9933",
+    "lon": "-51.1708",
+    "name": "Aeroporto Internacional Salgado Filho",
+	"display_name": "Porto Alegre - (POA)",
+    "city": "Porto Alegre",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511298",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBPA",
+    "tokens": [
+        "POA",
+        "Salgado Filho",
+        "Porto Alegre"
+    ]
+  },
+  {
+    "code": "PPB",
+    "lat": "-22.1778",
+    "lon": "-51.4208",
+    "name": "Aeroporto Presidente Prudente",
+	"display_name": "São Paulo - Presidente Prudente - (PPB)",
+    "city": "Presidente Prudente",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511289",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "PPB",
+        "Presidente Prudente",
+        "sao paulo"
+    ]
+  },
+  {
+    "code": "PVH",
+    "lat": "-8.7133",
+    "lon": "-63.9022",
+    "name": "Aeroporto Internacional Governador Jorge Teixeira de Oliveira",
+	"display_name": "P\u00f4rto Velho - (PVH)",
+    "city": "P\u00f4rto Velho",
+    "state": "Rondonia",
+    "country": "Brazil",
+    "woeid": "12511285",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "PVH",
+        "Governador Jorge Teixeira de Oliveira",
+        "Porto Velho"
+    ]
+  },
+  {
+    "code": "CWB",
+    "lat": "-25.5275",
+    "lon": "-49.1731",
+    "name": "Aeroporto Internacional Afonso Pena",
+	"display_name": "Curitiba - (CWB)",
+    "city": "Sao Jose dos Pinhais",
+    "state": "Paraná",
+    "country": "Brazil",
+    "woeid": "12511012",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "QWB",
+        "Afonso Pena",
+        "Curitiba"
+    ]
+  },
+  {
+    "code": "RAO",
+    "lat": "-21.1322",
+    "lon": "-47.7744",
+    "name": "Aeroporto Leite Lopes",
+	"display_name": "Ribeir\u00e3o Pr\u00eato - (RAO)",
+    "city": "Ribeir\u00e3o Pr\u00eato",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511210",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "RAO",
+        "Leite Lopes",
+        "Ribeirao Preto"
+    ]
+  },
+  {
+    "code": "RBR",
+    "lat": "-9.9981",
+    "lon": "-67.7997",
+    "name": "Aeroporto Internacional Presidente Medici",
+	"display_name": "Rio Branco - (RBR)",
+    "city": "Rio Branco",
+    "state": "Acre",
+    "country": "Brazil",
+    "woeid": "12511288",
+    "tz": "America\/Cuiaba",
+    "icao": "",
+    "tokens": [
+        "RBR",
+        "Presidente Medici",
+        "Rio Branco"
+    ]
+  },
+  {
+    "code": "REC",
+    "lat": "-8.1261",
+    "lon": "-34.9225",
+    "name": "Aeroporto Internacional Gilberto Freyre",
+	"display_name": "Recife - (REC)",
+    "city": "Recife",
+    "state": "Pernambuco",
+    "country": "Brazil",
+    "woeid": "12511167",
+    "tz": "America\/Belem",
+    "icao": "SBRF",
+    "tokens": [
+        "REC",
+        "Gilberto Freyre",
+        "Recife"
+    ]
+  },
+  {
+    "code": "RIA",
+    "lat": "-29.7106",
+    "lon": "-53.6875",
+    "name": "Aeroporto Santa Maria",
+	"display_name": "Santa Maria - (RIA)",
+    "city": "Santa Maria",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511304",
+    "tz": "America\/Sao_Paulo",
+    "icao": "KRIA",
+    "tokens": [
+        "RIA",
+        "Santa Maria"
+    ]
+  },
+  {
+    "code": "RIG",
+    "lat": "-32.0819",
+    "lon": "-52.1664",
+    "name": "Aeroporto Rio Grande",
+	"display_name": "Rio Grande - (RIG)",
+    "city": "Rio Grande",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511293",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "RIG",
+        "Rio Grande"
+    ]
+  },
+  {
+    "code": "ROO",
+    "lat": "-16.4458",
+    "lon": "-54.6639",
+    "name": "Aeroporto Rondonopolis",
+	"display_name": "Rondon\u00f3polis - (ROO)",
+    "city": "Rondon\u00f3polis",
+    "state": "Mato Grosso",
+    "country": "Brazil",
+    "woeid": "12511294",
+    "tz": "America\/Campo_Grande",
+    "icao": "",
+    "tokens": [
+        "ROO",
+        "Rondonopolis"
+    ]
+  },
+  {
+    "code": "SDU",
+    "lat": "-22.9107",
+    "lon": "-43.1707",
+    "name": "Aeroporto Santos Dumont",
+	"display_name": "Rio de Janeiro - Santos Dumont - (SDU)",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "country": "Brazil",
+    "woeid": "12511312",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBRJ",
+    "tokens": [
+        "SDU",
+        "Santos Dumont",
+        "Rio de Janeiro"
+    ]
+  },
+  {
+    "code": "RIO",
+    "lat": "-22.9107",
+    "lon": "-43.1707",
+    "name": "Todos os Aeroportos - Rio de Janeiro",
+    "display_name": "Rio de Janeiro - Todos os Aeroportos - (RIO)",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "country": "Brazil",
+    "woeid": "12511312",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBRJ",
+    "tokens": [
+        "RIO",
+        "Rio de Janeiro"
+    ]
+  },
+  {
+    "code": "SJK",
+    "lat": "-23.2283",
+    "lon": "-45.8706",
+    "name": "Aeroporto Internacional Sao José dos Campos",
+	"display_name": "Sao José dos Campos - (SJK)",
+    "city": "Sao José dos Campos",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511318",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "SJK",
+        "Sao Jose dos Campos"
+    ]
+  },
+  {
+    "code": "SJP",
+    "lat": "-20.8156",
+    "lon": "-49.4042",
+    "name": "Aeroporto Internacional de São José do Rio Preto",
+	"display_name": "S\u00e3o Jos\u00e9 do Rio Pr\u00eato - (SJP)",
+    "city": "S\u00e3o Jos\u00e9 do Rio Pr\u00eato",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511317",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "SJP",
+        "Sao Jose do Rio Preto"
+    ]
+  },
+  {
+    "code": "SLZ",
+    "lat": "-2.5867",
+    "lon": "-44.2358",
+    "name": "Aeroporto Internacional Marechal Cunha Machado",
+	"display_name": "São Luis - (SLZ)",
+    "city": "São Luiz",
+    "state": "Maranhão",
+    "country": "Brazil",
+    "woeid": "12511227",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "SLZ",
+        "Marechal Cunha Machado",
+        "Sao Luis",
+        "Maranhao"
+    ]
+  },
+  {
+    "code": "SRA",
+    "lat": "-27.9083",
+    "lon": "-54.5217",
+    "name": "Aeroporto Santa Rosa",
+	"display_name": "Santa Rosa - (SRA)",
+    "city": "Santa Rosa",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511306",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "SRA",
+        "Santa Rosa",
+        "Rio Grande do Sul"
+    ]
+  },
+  {
+    "code": "SSA",
+    "lat": "-12.9081",
+    "lon": "-38.3222",
+    "name": "Aeroporto Internacional Deputado Luis Eduardo Magalhaes",
+	"display_name": "Salvador - (SSA)",
+    "city": "Salvador",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "12511112",
+    "tz": "America\/Belem",
+    "icao": "SBSV",
+    "tokens": [
+        "SSA",
+        "Deputado Luis Eduardo Magalhaes",
+        "Salvador"
+    ]
+  },
+  {
+    "code": "STM",
+    "lat": "-2.4244",
+    "lon": "-54.7853",
+    "name": "Aeroporto Internacional de Santarem",
+	"display_name": "Santar\u00e9m - (STM)",
+    "city": "Santar\u00e9m",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "12511308",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "STM",
+        "Santarem"
+    ]
+  },
+  {
+    "code": "THE",
+    "lat": "-5.0603",
+    "lon": "-42.8239",
+    "name": "Aeroporto Senador Petronio Portella",
+	"display_name": "Teresina - (THE)",
+    "city": "Teresina",
+    "state": "Piauí",
+    "country": "Brazil",
+    "woeid": "12511344",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "THE",
+        "Senador Petronio Portella",
+        "Teresina"
+    ]
+  },
+  {
+    "code": "TMT",
+    "lat": "-1.48667",
+    "lon": "-56.3961",
+    "name": "Aeroporto de Trombetas",
+	"display_name": "Trombetas - (TMT)",
+    "city": "Trombetas",
+    "state": "Pará",
+    "country": "Brazil",
+    "woeid": "12511352",
+    "tz": "America\/Manaus",
+    "icao": "",
+    "tokens": [
+        "TMT",
+        "Trombetas",
+        "Para"
+    ]
+  },
+  {
+    "code": "TUR",
+    "lat": "-3.7767",
+    "lon": "-49.7192",
+    "name": "Aeroporto de Tucuru\u00ed",
+	"display_name": "Tucuru\u00ed - (TUR)",
+    "city": "Tucuru\u00ed",
+    "state": "Para",
+    "country": "Brazil",
+    "woeid": "12511353",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "TUR",
+        "Tucurui"
+    ]
+  },
+  {
+    "code": "UBA",
+    "lat": "-19.75",
+    "lon": "-47.95",
+    "name": "Aeroporto de Uberaba",
+	"display_name": "Uberaba - (UBA)",
+    "city": "Uberaba",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "455916",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "UBA",
+        "Uberaba"
+    ]
+  },
+  {
+    "code": "UDI",
+    "lat": "-18.8833",
+    "lon": "-48.2247",
+    "name": "Aeroporto Coronel Aviador Cesar Bombonato",
+	"display_name": "Uberlândia - (UDI)",
+    "city": "Uberlândia",
+    "state": "Minas Gerais",
+    "country": "Brazil",
+    "woeid": "12511358",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "UDI",
+        "Coronel Aviador Cesar Bombonato",
+        "Uberlândia"
+    ]
+  },
+  {
+    "code": "URG",
+    "lat": "-29.7817",
+    "lon": "-57.0383",
+    "name": "Aeroporto Internacional Rubem Berta",
+	"display_name": "Uruguaiana - (URG)",
+    "city": "Uruguaiana",
+    "state": "Rio Grande do Sul",
+    "country": "Brazil",
+    "woeid": "12511295",
+    "tz": "America\/Sao_Paulo",
+    "icao": "",
+    "tokens": [
+        "URG",
+        "Rubem Berta",
+        "Uruguaiana",
+        "Rio Grande do Sul"
+    ]
+  },
+  {
+    "code": "VCP",
+    "lat": "-23.0067",
+    "lon": "-47.1344",
+    "name": "Aeroporto Internacional Viracopos",
+	"display_name": "Campinas - Viracopos - (VCP)",
+    "city": "Campinas",
+    "state": "São Paulo",
+    "country": "Brazil",
+    "woeid": "12511374",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBKP",
+    "tokens": [
+        "VCP",
+        "Viracopos",
+        "Campinas",
+        "sao paulo"
+    ]
+  },
+  {
+    "code": "VDC",
+    "lat": "-14.8633",
+    "lon": "-40.8628",
+    "name": "Aeroporto Vitória da Conquista",
+	"display_name": "Vit\u00f3ria da Conquista - (VDC)",
+    "city": "Vit\u00f3ria da Conquista",
+    "state": "Bahia",
+    "country": "Brazil",
+    "woeid": "12511375",
+    "tz": "America\/Belem",
+    "icao": "",
+    "tokens": [
+        "VDC",
+        "Vitoria da Conquista"
+    ]
+  },
+  {
+    "code": "VIX",
+    "lat": "-20.2578",
+    "lon": "-40.2864",
+    "name": "Aeroporto Goiabeiras",
+	"display_name": "Vitória - (VIX)",
+    "city": "Vitória",
+    "state": "Espirito Santo",
+    "country": "Brazil",
+    "woeid": "12511159",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBVT",
+    "tokens": [
+        "VIX",
+        "Goiabeiras",
+        "Vitoria"
+    ]
+  },
+  {
+    "code": "XAP",
+    "lat": "-27.1325",
+    "lon": "-52.6611",
+    "name": "Aeroporto de Chapecó",
+	"display_name": "Chapecó - (XAP)",
+    "city": "Chapecó",
+    "state": "Santa Catarina",
+    "country": "Brazil",
+    "woeid": "12511090",
+    "tz": "America\/Sao_Paulo",
+    "icao": "SBCH",
+    "tokens": [
+        "XAP",
+        "Chapecó"
+    ]
+  },
+  {
+    "code": "XNB",
+    "lat": "-3.08333",
+    "lon": "-67.9333",
+    "name": "Aeroporto de Sinop",
+	"display_name": "Santo Ant\u00f4nio do I\u00e7\u00e1 - (XNB)",
+    "city": "Santo Ant\u00f4nio do I\u00e7\u00e1",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "12523221",
+    "tz": "America\/Porto_Velho",
+    "icao": "",
+    "tokens": [
+        "XNB",
+        "Sinop",
+        "Santo Antonio do I\u00e7\u00e1",
+        "Amazonas"
+    ]
+  },
+  {
+    "code": "ZNB",
+    "lat": "-3.08333",
+    "lon": "-67.9333",
+    "name": "Aeroporto de Sinop",
+	"display_name": "Santo Ant\u00f4nio do I\u00e7\u00e1 - (ZNB)",
+    "city": "Santo Ant\u00f4nio do I\u00e7\u00e1",
+    "state": "Amazonas",
+    "country": "Brazil",
+    "woeid": "12523221",
+    "tz": "America\/Porto_Velho",
+    "icao": "",
+    "tokens": [
+        "ZNB",
+        "Aeroporto de Sinop",
+        "Santo Ant\u00f4nio do I\u00e7\u00e1",
+        "Amazonas"
+    ]
+  }
+]

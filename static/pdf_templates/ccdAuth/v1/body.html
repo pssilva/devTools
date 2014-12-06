@@ -1,0 +1,160 @@
+
+	
+<h3>Autorizo e reconheço o débito em minha conta do cartão de crédito abaixo:</h3>
+<br>
+
+<table width="100%">
+	<tr>
+		<td valign="top" width="50%">
+			<table width="100%" border="1">
+				<tr>
+					<th colspan="2">Dados do Cartão de Crédito</th>
+				</tr>
+
+				<tr>
+					<td style="width:120px;">&nbsp;Nome</td>
+					<td style="width:220px;">&nbsp;{{CARD_HOLDER_NAME}}</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;Bandeira</td>
+					<td>&nbsp;{{CARD_FLAG}}</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;N.º do Cartão</td>
+					<td>&nbsp;{{CARD_NUMBER}}</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;Validade</td>
+					<td>&nbsp;{{CARD_EXPIRATION_DATE}}</td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;Telefone</td>
+					<td>&nbsp;{{CARD_HOLDER_PHONE}}</td>
+				</tr>
+
+			</table>
+		</td>
+
+		<td valign="top" width="50%">
+			<table width="100%" border="1">
+				<tr>
+					<th colspan="2">Dados da Operação</th>
+				</tr>
+
+				<tr>
+					<td style="width:150px;">&nbsp;Cia. Aérea</td>
+					<td style="width:220px;">&nbsp;{{OP_OUTBOUND}} {{OP_INBOUND}}</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;Cód. Aut.</td>
+					<td>&nbsp;OP{{ORDER_ID}}</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;Data</td>
+					<td>&nbsp;{{DATE}}</td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;Moeda</td>
+					<td>&nbsp;R$ - Real</td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;N.º. de Parcelas</td>
+					<td>&nbsp;{{INSTALLMENTS}}</td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;Valor da Parcela</td>
+					<td>&nbsp;R$ {{SPLITED_PRICE}}</td>
+				</tr>
+
+				<tr>
+					<td>&nbsp;Total da Venda no Cartão</td>
+					<td>&nbsp;R$ {{CARD_PRICE_TOTAL}}</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<br>
+
+<h3>Passageiros:</h3>
+<br />
+<table width="100%" border="1">
+	<thead>
+		<tr>
+			<th>Pax</th>
+			<th>Nome</th>
+			<th>Telefone</th>
+			<th>E-mail</th>
+			<th>Nascimento</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{PASSENGERS_ARRAY}}
+		<!--
+		<tr class="center">
+	        <td id="tabela-pax"><b>1</b></td>
+	        <td id="tabela-nome">Ludwig Van Beethoven</td>
+	        <td id="tabela-telefone">(31) 9173-6942</td>
+	        <td id="tabela-email">dudwig.piano@gmail.com</td>
+	        <td id="tabela-nascimento">17/12/1770</td>
+        </tr>
+        -->
+	</tbody>
+</table>
+<br /><br /><br />
+
+<h3>ATENÇÃO</h3>
+<br />
+<table width="100%">
+	<tr>
+		<td  colspan="2">
+			Qualquer transação realizada fora dos padrões contratuais das Administradoras implicará em sanções legais, tanto para o Estabelecimento e seus intermediários, quanto para o Associado.
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td  colspan="2">
+			Ao autorizar o débito no cartão de crédito, Associado e Estabelecimento declaram estar cientes e concordar com as seguintes condições:
+		</td>
+	</tr>
+	<tr>
+		<td style="width:20px;"></td>
+		<td>
+			<br>
+			1 - Questionamentos ou cancelamentos dos serviços adquiridos devem ser resolvidos entre as partes, de acordo com as Condições Gerais do contrato entre Estabelecimento e Cliente.
+		</td>
+	</tr>
+	<tr>
+		<td style="width:20px;"></td>
+		<td>
+			2 - O Estabelecimento e seus intermediários são responsáveis pela correta aceitação, conferindo na apresentação do cartão, sua validade, autenticidade e assinatura do Titular
+		</td>
+	</tr>
+	
+</table>
+
+
+<br /><br /><br />
+<br /><br /><br />
+<br /><br /><br />
+
+<table width="100%">
+	<tr>
+		<td align="center">
+			<p>_________________________________________________________________________</p>
+			<p>Local, Data e Assinatura do Titular do Cartão</p>
+			<p>NÃO ASSINE EM BRANCO</p>
+		</td>
+	</tr>
+</table>
+

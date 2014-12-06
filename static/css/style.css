@@ -1,0 +1,231 @@
+/*!
+ * Bootstrap v3.0.0
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world by @mdo and @fat.
+ */
+
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+/*
+* Custom CSS on top of bootstrap
+* @author:Marcos Brasil;
+* @date:04/10/2013;
+*/
+
+/************* GENERAL STYLES **************/
+.gnr-center {
+  text-align: center;
+}
+/*******************************************/
+
+.table thead th.op{width: 67px;}
+.table thead th.flight-number{width: 70px;}
+.table thead th.departure{/* width: 270px; */}
+.table thead th.arrival{/* width: 270px; */}
+.table thead th.miles-price{width: 60px;}
+.table thead th.money-op-price{width: 85px;}
+.table thead th.stops{width: 80px;}
+.table thead th.money-hm-price{width: 100px;}
+.table thead th.duraction{width: 70px;}
+
+.table td, .table th{vertical-align: middle;text-align: center;}
+
+.table > thead > tr > th > span.sort{border-bottom: 1px dotted #000;cursor: pointer;}
+.table > thead > tr > th > span.glyphicon{cursor: pointer;}
+
+.table > thead > tr > td.GOL,
+.table > tbody > tr > td.GOL,
+.table > tfoot > tr > td.GOL,
+.table > thead > tr > th.GOL,
+.table > tbody > tr > th.GOL,
+.table > tfoot > tr > th.GOL,
+.table > thead > tr.GOL > td,
+.table > tbody > tr.GOL > td,
+.table > tfoot > tr.GOL > td,
+.table > thead > tr.GOL > th,
+.table > tbody > tr.GOL > th,
+.table > tfoot > tr.GOL > th {
+  background-color: #fcf8e3;
+  border-color: #fbeed5;
+  vertical-align: middle;
+}
+
+.table-hover > tbody > tr > td.GOL:hover,
+.table-hover > tbody > tr > th.GOL:hover,
+.table-hover > tbody > tr.GOL.selected  > td,
+.table-hover > tbody > tr.GOL:hover > td {
+  background-color: #faf2cc;
+  border-color: #f8e5be;
+}
+
+.table td.GOL, .searchby span.GOL{
+  background-image: url(../img/GOL_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table > thead > tr > td.TAM,
+.table > tbody > tr > td.TAM,
+.table > tfoot > tr > td.TAM,
+.table > thead > tr > th.TAM,
+.table > tbody > tr > th.TAM,
+.table > tfoot > tr > th.TAM,
+.table > thead > tr.TAM > td,
+.table > tbody > tr.TAM > td,
+.table > tfoot > tr.TAM > td,
+.table > thead > tr.TAM > th,
+.table > tbody > tr.TAM > th,
+.table > tfoot > tr.TAM > th {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  vertical-align: middle;
+}
+
+.table-hover > tbody > tr > td.TAM:hover,
+.table-hover > tbody > tr > th.TAM:hover,
+.table-hover > tbody > tr.TAM.selected  > td,
+.table-hover > tbody > tr.TAM:hover > td {
+  background-color: #ebcccc;
+  border-color: #e6c1c7;
+}
+
+.table td.TAM, .searchby span.TAM {
+  background-image: url(../img/TAM_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table > thead > tr > td.AZUL,
+.table > tbody > tr > td.AZUL,
+.table > tfoot > tr > td.AZUL,
+.table > thead > tr > th.AZUL,
+.table > tbody > tr > th.AZUL,
+.table > tfoot > tr > th.AZUL,
+.table > thead > tr.AZUL > td,
+.table > tbody > tr.AZUL > td,
+.table > tfoot > tr.AZUL > td,
+.table > thead > tr.AZUL > th,
+.table > tbody > tr.AZUL > th,
+.table > tfoot > tr.AZUL > th {
+  background-color: #f5f5f5;
+  border-color: #d9edf7;
+  vertical-align: middle;
+}
+
+.table-hover > tbody > tr > td.AZUL:hover,
+.table-hover > tbody > tr > th.AZUL:hover,
+.table-hover > tbody > tr.AZUL.selected  > td,
+.table-hover > tbody > tr.AZUL:hover > td {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+.table td.AZUL, .searchby span.AZUL {
+  background-image: url(../img/AZUL_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.table thead>tr>th, 
+.table tbody>tr>th, 
+.table tfoot>tr>th, 
+.table thead>tr>td, 
+.table tbody>tr>td, 
+.table tfoot>tr>td{
+  padding: 5px;
+}
+
+form#formSearch input, form#formSearch select{font-size: 24px;padding: 2px 12px;}
+form#formSearch select{padding-top: 0px;}
+
+.list-index {display: none;} 
+
+.bs-callout {margin: 20px 0;padding: 15px 30px 15px 15px;border-left: 5px solid #eee;}
+.bs-callout-warning {background-color: #fefbed;border-color: #f1e7bc;}
+.bs-callout-info {background-color: #f0f7fd;border-color: #d0e3f0;}
+
+.bs-callout.emissao-ok{margin: 0 0 20px 25px;}
+.alert.emissao-ok{margin-bottom: 0px;}
+ 
+td.worth{color: #468847;background-color: #dff0d8;font-weight: bold;}
+div.loader{z-index:9;width: 400px;height: 250px;margin: 5px auto;background: transparent url(../img/loader.gif) no-repeat center top;text-align: center;padding-top: 160px;}
+div.page-header h1 {font-weight: bold;margin: 0px;}
+div.page-header > img{}
+div.page-header > div.header-info{display: inline-block;padding: 0px 18px;margin-top: 48px;position: absolute;}
+div.page-header > div.header-info > div.loggedin{display: inline-block;}
+
+button.btn-primary{background-color: #5B90A4;border-color: #7BA5B7;}
+button.btn-primary:hover{background-color: #007491;border-color: #007491;}
+
+a.btn-primary {background-color: #5B90A4;border-color: #7BA5B7;}
+a.btn-primary:hover{background-color: #007491;border-color: #007491;}
+
+/******************** BUG FIX FOR IE 9-**************************/
+input::-ms-clear {
+    display: none;
+}
+/******************** BUG FIX FOR IE 9-**************************/
+
+/**************************************EMISSION STYLE****************************************/
+
+div#_emissao > div.modal-dialog{width:960px;}
+div#_emissao table#passengertable > thead > tr > th.name{}
+div#_emissao table#passengertable > thead > tr > th.email{}
+div#_emissao table#passengertable > thead > tr > th.phone{width: 145px;}
+div#_emissao table#passengertable > thead > tr > th.birthday{width: 110px;}
+div#_emissao table#passengertable > thead > tr > th.rminput{width: 130px}
+
+em.has-error{color: #b94a48;margin: 0;padding: 0;font-size: 11px}
+
+/**************************************EMISSION STYLE****************************************/
+
+/**********************************typeahead style******************************************/ 
+.tt-suggestion {padding: 8px 20px;}
+.tt-suggestion + .tt-suggestion {border-top: 1px solid #ccc;}
+.tt-suggestions .airport-iata {float: right;font-style: italic;}
+.tt-suggestions .airport-name {font-weight: bold;}
+.tt-suggestions .airport-city {font-size: 14px;}
+span.twitter-typeahead{display: block !important;}
+
+.demo {position: relative;*z-index: 1;margin: 50px 0;}
+
+.typeahead,.tt-query,.tt-hint {width: 100%;padding: 2px 12px;font-size: 24px;line-height: 30px;}
+.typeahead {background-color: #fff;}
+.typeahead:focus {border: 2px solid #0097cf;}
+.tt-query {-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.tt-hint {color: #999}
+.tt-dropdown-menu {width: 100%;margin-top: 2px;padding: 5px 0;background-color: #fff;border: 1px solid #ccc;border: 1px solid rgba(0, 0, 0, 0.2);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);-moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);box-shadow: 0 5px 10px rgba(0,0,0,.2);}
+.tt-suggestion {padding: 3px 20px;font-size: 18px;line-height: 24px;}
+.tt-suggestion.tt-is-under-cursor {color: #fff;background-color: #0097cf;}
+.tt-suggestion p {margin: 0;}
+/**********************************typeahead style******************************************/
+
+/*ADMIN*/
+dl.dl-correct > dt{padding: 7px 0px 0px 0px;}
+dl.dl-correct > dd{padding: 7px 0px;}
+dl.dl-correct > dd > div{padding-left: 0;} 
+
+table.admin {
+  font-size: 12px;
+}
+
+/*Corrigindo falta de estilo para info em tr de tabelas*/
+.table>thead>tr>td.info, 
+.table>tbody>tr>td.info, 
+.table>tfoot>tr>td.info, 
+.table>thead>tr>th.info, 
+.table>tbody>tr>th.info, 
+.table>tfoot>tr>th.info, 
+.table>thead>tr.info>td, 
+.table>tbody>tr.info>td, 
+.table>tfoot>tr.info>td, 
+.table>thead>tr.info>th, 
+.table>tbody>tr.info>th, 
+.table>tfoot>tr.info>th {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}

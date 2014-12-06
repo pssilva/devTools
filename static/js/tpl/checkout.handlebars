@@ -1,0 +1,303 @@
+<!--
+-- Handlebars template engine
+-- Checkout STEP 4 (Revisar Pedido) template schema
+-->
+
+<h1 class="title-step">Revisão e Gerar OP</h1>
+<h3>Cálculo dos trechos para emissão</h3>
+<div id="title-emissao">
+    {{#if HAS_INFANT}}
+        <!--==================-->
+        <!-- EMISSÃO quando houver crianças  -->
+        <!--==================-->
+        <div id="tabelas-emissao-children">
+            <table class="trechos-emissao trechos-children">
+                <tr>
+                    <th>Data</th>
+                    <th>Cia</th>
+                    <th>Voo</th>
+                    <th>Partida</th>
+                    <th></th>
+                    <th>Chegada</th>
+                    <th>Paradas</th>
+                    <th>Pax</th>
+                    <th>Milhas <span>(por Pax)</span></th>
+                    <th>Tarifa <span>(por Pax)</span></th>
+                    <th>Taxa <span>(por Pax)</span></th>
+                    <th>TOTAL</th>
+                </tr>
+                {{#OUTBOUND}}
+                    <tr class="tr card-outbound cia-revisao">
+                        <td class="size1 color1 data">
+                            <p>ida</p>
+                            <p id="date">{{DATE_TRUNCATED}}</p>
+                        </td>
+                        <td class="size1 color2 cia-{{OP}}" id="cia" style="height: 70px"></td>
+                        <td class="size1 color2" id="flight-number">{{FLIGHT_NUMBER}}</td>
+                        <td class="size1 color3 no-border">
+                            <p id="departure-time">{{DEPARTURE_TIME}}</p>
+                            <p id="departure-location"><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                        </td>
+                        <td class="size1 color3 no-border">
+                            <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                            <p class="info-duration" id="flight-duration">{{TOTAL_FLIGHT_DURATION}}</p>
+                        </td>
+                        <td class="size1 color3">
+                            <p id="arrival-time">{{ARRIVAL_END_TIME}}</p>
+                            <p id="arrival-location"><a alt="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip" data-title="{{ARRIVAL_END_LOCATION_NAME}}">{{ARRIVAL_END_LOCATION}}</a></p>
+                        </td>
+                        <td class="size1 color2" style="font-size:11px">
+                            <p>{{ESCALE}}</p>
+                        </td>
+                        <td class="size1 color4 children-p">
+                            <p><span id="qtd-adl">{{PAX_ADULT}}</span> <img src="static/img/ico-adult-checkout.png" alt=""></p>
+                            <p><span id="qtd-chd">{{PAX_INFANT}}</span> <img src="static/img/ico-children-checkout.png" alt=""></p>
+                        </td>
+                        <td class="size2 color2 children-p">
+                            <p id="miles-adl">{{PRICE_MILES}}</p>
+                            <p id="miles-chd">{{PRICE_MILES_INFANT}}</p>
+                        </td>
+                        <td class="size2 color4 children-p">
+                            <p id="price-base-adl">R$ {{PRICE_MILHASFACIL_RATE_ADULT}}</p>
+                            <p id="price-base-chd">R$ {{PRICE_MILHASFACIL_RATE_INFANT}}</p>
+                        </td>
+                        <td class="size2 color4 children-p">
+                            <p id="boarding-tax-adl">R$ {{TAX_TOTAL}}</p>
+                            <p id="boarding-tax-chd">R$ {{TAX_TOTAL}}</p>
+                        </td>
+                        <td class="size2 color5 children-p">
+                            <p id="price-total-adl">R$ {{PRICE_MILHASFACIL_TOTAL_ADULT}}</p>
+                            <p id="price-total-chd">R$ {{PRICE_MILHASFACIL_TOTAL_INFANT}}</p>
+                        </td>
+                    </tr>
+                {{/OUTBOUND}}
+
+                {{#INBOUND}}
+                    <tr class="tr card-inbound cia-revisao">
+                        <td class="size1 color1 data">
+                            <p>volta</p>
+                            <p id="date">{{DATE_TRUNCATED}}</p>
+                        </td>
+                        <td class="size1 color2 cia-{{OP}}" id="cia" style="height: 70px">{{OP}}</td>
+                        <td class="size1 color2" id="flight-number">{{FLIGHT_NUMBER}}</td>
+                        <td class="size1 color3 no-border">
+                            <p id="departure-time">{{DEPARTURE_TIME}}</p>
+                            <p id="departure-location"><a title="{{DEPARTURE_LOCATION_NAME}}" alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                        </td>
+                        <td class="size1 color3 no-border">
+                            <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                            <p class="info-duration" id="flight-duration">{{TOTAL_FLIGHT_DURATION}}</p>
+                        </td>
+                        <td class="size1 color3">
+                            <p id="arrival-time">{{ARRIVAL_END_TIME}}</p>
+                            <p id="arrival-location"><a title="{{ARRIVAL_END_LOCATION_NAME}}" alt="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip" data-title="{{ARRIVAL_END_LOCATION_NAME}}">{{ARRIVAL_END_LOCATION}}</a></p>
+                        </td>
+                        <td class="size1 color2" style="font-size:11px">
+                            <p>{{ESCALE}}</p>
+                        </td>
+                        <td class="size1 color4 children-p">
+                            <p><span id="qtd-adl">{{PAX_ADULT}}</span> <img src="static/img/ico-adult-checkout.png" alt=""></p>
+                            <p><span id="qtd-chd">{{PAX_INFANT}}</span> <img src="static/img/ico-children-checkout.png" alt=""></p>
+                        </td>
+                        <td class="size2 color2 children-p">
+                            <p id="miles-adl">{{PRICE_MILES}}</p>
+                            <p id="miles-chd">{{PRICE_MILES_INFANT}}</p>
+                        </td>
+                        <td class="size2 color4 children-p">
+                            <p id="price-base-adl">R$ {{PRICE_MILHASFACIL_RATE_ADULT}}</p>
+                            <p id="price-base-chd">R$ {{PRICE_MILHASFACIL_RATE_INFANT}}</p>
+                        </td>
+                        <td class="size2 color4 children-p">
+                            <p id="boarding-tax-adl">R$ {{TAX_TOTAL}}</p>
+                            <p id="boarding-tax-chd">R$ {{TAX_TOTAL}}</p>
+                        </td>
+                        <td class="size2 color5 children-p">
+                            <p id="price-total-adl">R$ {{PRICE_MILHASFACIL_TOTAL_ADULT}}</p>
+                            <p id="price-total-chd">R$ {{PRICE_MILHASFACIL_TOTAL_INFANT}}</p>
+                        </td>
+                    </tr>
+                {{/INBOUND}}
+
+                <tr id="borda"></tr>
+                <tr id="total-trechos">
+                    <td class="size1 color1" colspan="8">total dos trechos da ida e da volta</td>
+                    <td class="size2 color2">{{TOTALS.MILES}}</td>
+                    <td class="size2 color2">R$ {{TOTALS.RATE_PRICE}}</td>
+                    <td class="size2 color2">R$ {{TOTALS.RATE_TAX}}</td>
+                    <td class="size4 color4">R$ {{TOTALS.PRICE}}</td>
+                </tr>
+            </table>
+        </div>
+    {{else}}
+        <!--==================-->
+        <!-- EMISSÃO quando NÃO houver crianças  -->
+        <!--==================-->
+        <div id="tabelas-emissao">
+            <table class="trechos-emissao">
+                <tr>
+                    <th>Data</th>
+                    <th>Cia</th>
+                    <th>Voo</th>
+                    <th>Partida</th>
+                    <th></th>
+                    <th>Chegada</th>
+                    <th>Paradas</th>
+                    <th>Pax</th>
+                    <th>Milhas <span>(por Pax)</span></th>
+                    <th>Tarifa <span>(por Pax)</span></th>
+                    <th>Taxa <span>(por Pax)</span></th>
+                    <th>TOTAL</th>
+                </tr>
+                {{#OUTBOUND}}
+                    <tr class="tr card-outbound cia-revisao">
+                        <td class="size1 color1 data">
+                            <p>ida</p>
+                            <p id="date">{{DATE_TRUNCATED}}</p>
+                        </td>
+                        <td class="size1 color2 cia-{{OP}}" id="cia">{{OP}}</td>
+                        <td class="size1 color2" id="flight-number">{{FLIGHT_NUMBER}}</td>
+                        <td class="size1 color3 no-border">
+                            <p id="departure-time">{{DEPARTURE_TIME}}</p>
+                            <p id="departure-location"><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                        </td>
+                        <td class="size1 color3 no-border">
+                            <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                            <p class="info-duration" id="flight-duration">{{TOTAL_FLIGHT_DURATION}}</p>
+                        </td>
+                        <td class="size1 color3">
+                            <p id="arrival-time">{{ARRIVAL_END_TIME}}</p>
+                            <p id="arrival-location"><a alt="{{ARRIVAL_END_LOCATION_NAME}}" data-title="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip">{{ARRIVAL_END_LOCATION}}</a></p>
+                        </td>
+
+                        <td class="size1 color2" style="width:80px;">
+                            <p>{{ESCALE}}</p>
+                        </td>
+                        <td class="sizepax color4">{{PAX_ADULT}}</td>
+                        <td class="size2 color2">{{PRICE_MILES}}</td>
+                        <td class="size2 color4"><span>R$</span> {{PRICE_MILHASFACIL_RATE_ADULT}}</td>
+                        <td class="size2 color2"><span>R$</span> {{TAX_TOTAL}}</td>
+                        <td class="size2 color5"><span>R$</span> {{PRICE_MILHASFACIL_TOTAL_ADULT}}</td>
+                    </tr>
+                {{/OUTBOUND}}
+
+                {{#INBOUND}}
+                    <tr class="tr card-inbound cia-revisao">
+                        <td class="size1 color1 data">
+                            <p>volta</p>
+                            <p id="date">{{DATE_TRUNCATED}}</p>
+                        </td>
+                        <td class="size1 color2 cia-{{OP}}" id="cia">{{OP}}</td>
+                        <td class="size1 color2" id="flight-number">{{FLIGHT_NUMBER}}</td>
+                        <td class="size1 color3 no-border">
+                            <p id="departure-time">{{DEPARTURE_TIME}}</p>
+                            <p id="departure-location"><a alt="{{DEPARTURE_LOCATION_NAME}}" data-title="{{DEPARTURE_LOCATION_NAME}}" class="tooltip">{{DEPARTURE_LOCATION}}</a></p>
+                        </td>
+                        <td class="size1 color3 no-border">
+                            <p><img src="static/img/ico-duracao-voo.png" alt=""></p>
+                            <p class="info-duration" id="flight-duration">{{TOTAL_FLIGHT_DURATION}}</p>
+                        </td>
+                        <td class="size1 color3">
+                            <p id="arrival-time">{{ARRIVAL_END_TIME}}</p>
+                            <p id="arrival-location"><a alt="{{ARRIVAL_END_LOCATION_NAME}}" class="tooltip" data-title="{{ARRIVAL_END_LOCATION_NAME}}">{{ARRIVAL_END_LOCATION}}</a></p>
+                        </td>
+
+                        <td class="size1 color2" style="width:80px;">
+                            <p>{{ESCALE}}</p>
+                        </td>
+                        <td class="sizepax color4">{{PAX_ADULT}}</td>
+                        <td class="size2 color2">{{PRICE_MILES}}</td>
+                        <td class="size2 color4"><span>R$</span> {{PRICE_MILHASFACIL_RATE_ADULT}}</td>
+                        <td class="size2 color2"><span>R$</span> {{TAX_TOTAL}}</td>
+                        <td class="size2 color5"><span>R$</span> {{PRICE_MILHASFACIL_TOTAL_ADULT}}</td>
+                    </tr>
+                {{/INBOUND}}
+                <tr id="borda"></tr>
+                <tr id="total-trechos">
+                    <td class="size1 color1" colspan="8">total dos trechos da ida e da volta</td>
+                    <td class="size2 color2">{{TOTALS.MILES}}</td>
+                    <td class="size2 color2">R$ {{TOTALS.RATE_PRICE}}</td>
+                    <td class="size2 color2">R$ {{TOTALS.RATE_TAX}}</td>
+                    <td class="size4 color4">R$ {{TOTALS.PRICE}}</td>
+                </tr>
+            </table>
+        </div>
+    {{/if}}
+    
+    {{#if HAS_CCD}}
+        {{#CARD_DATA}}
+            <div id="resumo-pagamento">
+                <h3>Dados de pagamento</h3>
+                <h4>Entrada em dinheiro: <span>R$ {{ON_CASH}}</span></h4>
+                
+                <div id="tabela-resumo-pagamento" class="clearfix">
+                    <div class="dado-pagamento left">
+                        <p>Restante em:</p>
+                        <p>{{CARD_PARCELS}}x R$ {{CARD_PARCELS_VALUE}}</p>
+                    </div>
+                    <div class="dado-pagamento left">
+                        <p>No cartão de Crédito:</p>
+                        <p>{{CARD_FLAG}}</p>
+                    </div>
+                    <div class="dado-pagamento left">
+                        <p>Titular:</p>
+                        <p>{{CARD_NAME}}</p>
+                    </div>
+                    <div class="dado-pagamento right" style="width:131px">
+                        <p>Nº do cartão:</p>
+                        <p>xxxx xxxx xxxx {{CARD_LAST4DIGITS}}</p>
+                    </div>
+                </div>
+            </div>
+        {{/CARD_DATA}}
+    {{/if}}
+
+    <div id="dados-passanger">
+        <h4>Passageiros</h4>
+        {{#PASSENGERS}}
+            <div class="field-passanger">
+                <p>Passageiro ADL <a class="edit-dados">Editar <img src="static/img/ico-pen-edit.png" alt=""></a>
+                <a class="salve-dados hidden">Salvar <img style="margin-left: 5px" src="static/img/ico-save.png" alt=""></a></p>
+                <label for="" class="label-passanger1">
+                    <input type="text" placeholder="Nome:" name="passenger_rev[{{@index}}][NAME]" id="passenger-name[{{@index}}]" class="nome" value="{{NAME}}" readonly required>
+                </label>
+                <label for="" class="label-passanger1">
+                    <input type="text" placeholder="E-mail:" name="passenger_rev[{{@index}}][EMAIL]" id="passenger-email[{{@index}}]" class="email" value="{{EMAIL}}" readonly required>
+                </label>
+                <label for="" class="label-passanger2">
+                    <input type="text" placeholder="Identidade:" name="passenger_rev[{{@index}}][RG]" id="passenger-rg[{{@index}}]" class="input-passanger identidade" value="{{RG}}" readonly required> 
+                </label>
+                <label for="" class="label-passanger2">
+                    <input type="text" placeholder="Celular:" name="passenger_rev[{{@index}}][MOBILE]" id="passenger-mobile[{{@index}}]" class="input-passanger celular" value="{{MOBILE}}" readonly required>
+                </label>
+                <label for="" class="label-passanger2">
+                    <input type="text" placeholder="Nascimento:" name="passenger_rev[{{@index}}][BIRTHDATE]" id="passenger-birth[{{@index}}]" class="input-passanger datebirthday nascimento" value="{{BIRTHDATE}}" readonly required>
+                </label>
+            </div>
+        {{/PASSENGERS}}
+
+        {{#PASSENGERS_CHD}}
+            <div class="field-passanger">
+                <p>Passageiro CHD <a class="edit-dados">Editar <img src="static/img/ico-pen-edit.png" alt=""></a>
+                <a class="salve-dados hidden">Salvar <img style="margin-left: 5px" src="static/img/ico-save.png" alt=""></a></p>
+                <label for="" class="label-passanger1">
+                    <input type="text" name="passenger_chd_rev[{{@index}}][NAME]" id="passenger-name-children[{{@index}}]" class="nome" value="{{NAME}}" readonly required>
+                </label>
+                <!-- <label for="" class="label-passanger1">
+                    <input type="text" placeholder="E-mail:" name="passenger_chd_rev[{{@index}}][EMAIL]" id="passenger-email-children[{{@index}}]" class="email" disabled="disabled" value="{{EMAIL}}" disabled="disabled">
+                </label>
+                <label for="" class="label-passanger2">
+                    <input type="text" placeholder="Celular:" name="passenger_chd_rev[{{@index}}][MOBILE]" id="passenger-birth-children[{{@index}}]" class="input-passanger celular celular-pax" disabled="disabled" value="{{MOBILE}}" disabled="disabled">
+                </label> -->
+                <label for="" class="label-passanger2">
+                    <input type="text" placeholder="Nascimento:" name="passenger_chd_rev[{{@index}}][BIRTHDATE]" id="passenger-birth-children[{{@index}}]" class="input-passanger datebirthday-chd nascimento" value="{{BIRTHDATE}}" readonly required>
+                </label>
+            </div>
+        {{/PASSENGERS_CHD}}
+
+        <div class="passager" style="margin-top:10px">
+            <p><strong>Observações: </strong><a class="edit-dados">Editar <img src="static/img/ico-pen-edit.png" alt=""></a>
+                <a class="salve-dados hidden">Salvar <img style="margin-left: 5px" src="static/img/ico-save.png" alt=""></a></p>
+            <textarea name="passenger-observation_rev" id="passenger-observation" cols="30" rows="10" readonly>{{OBS}}</textarea>
+        </div>
+    </div>
+</div>

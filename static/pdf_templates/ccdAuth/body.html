@@ -1,0 +1,157 @@
+
+<div id="container">
+
+	<h3>Trechos para Emissão:</h3>
+	<table width="100%" border="1" class="table">
+	  <tr>
+	  		<th>Trecho</th>
+	      <th>Cia.</th>
+	      <th># Voo</th>
+	      <th>Paradas</th> 
+	      <th>Data</th>
+	      <th>Origem</th>
+	      <th>Destino</th>
+	      <th>Duração</th> 
+	  </tr>
+		{{FLIGHT_TABLE}}
+	</table>
+
+	<br><br>
+	
+	<h3>Dados do Cartão:</h3>
+	<table>
+		<tr>
+			<td width="150px">
+				{{CCD_FLAG_BLOCK}}
+			</td>
+			<td>
+				<table>
+					<tr>
+						<td>Nº do cartão truncado:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{CCD_BIN}}</td>
+					</tr>
+
+					<tr>
+						<td>Validade:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{CCD_EXPIRATION}}</td>
+					</tr>
+
+					<tr>
+						<td>Nome do portador:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{CCD_HOLDERS_NAME}}</td>
+					</tr>
+
+					<tr>
+						<td>Telefone para contato:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{CCD_HOLDERS_PHONE}}</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+	
+	<h3>Dados de Pagamento:</h3>
+	<table>
+		<tr>
+			<td width="50%">
+				<table>
+					<tr>
+						<td>Código de autorização:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{CCD_AUTH_CODE}}</td>
+					</tr>
+					<tr>
+						<td>Entrada:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">R$ {{CCD_ON_CASH}}</td>
+					</tr>
+					<tr>
+						<td>Valor da parcela:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">R$ {{CCD_INSTALLMENT_VALUE}}</td>
+					</tr>
+				</table>
+			</td>
+			<td width="50%">
+				<table>
+					<tr>
+						<td>Data:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{DATE}}</td>
+					</tr>
+					<tr>
+						<td>Total da venda:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">R$ {{CCD_TOTAL}}</td>
+					</tr>
+					<tr>
+					<tr>
+						<td>Nº de parcelas:</td>
+						<td width="20px"></td>
+						<td class="fulfilled">{{CCD_INTALLMENTS}}</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<br><br>
+		
+	<table>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td width="400px" height="70px" class="fulfilled">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center">Carimbo e assinatura da agência de viagens</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table> 
+					<tr>
+						<td width="400px" height="70px" class="fulfilled">&nbsp;</td>
+					</tr>
+					<tr>
+						<td align="center">Assinatura do portador do cartão</td>
+					</tr>
+					<tr>
+						<td align="center">(Não assine em branco)</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<h3>Nome dos Passageiros:</h3>
+	<table>
+		{{PASSENGERS_BLOCK}}
+	</table>
+
+	<br><br>
+
+	<h3>Atenção</h3>
+	<p>Qualquer transação realizada fora dos padrões contratuais da Rede implicará em sanções legais tanto para o estabelecimento e seus intermediários quanto para o associado.</p>
+	<p>Ao autorizar o débito no cartão de crédito, associado e estabelecimento declaram estar cientes e concordar com as seguintes condições:</p>
+	<br>
+	<p>1. Questionamentos ou cancelamentos dos serviços adquiridos devem ser resolvidos entre as partes, de acordo com as condições gerais do contrato entre estabelecimento e cliente.</p>
+	<p>2. O estabelecimento e seus intermediários são responsáveis pela correta aceitação, conferindo na apresentação do cartão sua validade, autenticidade e assinatura do titular.</p>
+	<p>3. Em caso de contestação por parte do associado, o estabelecimento é responsável pela apresentação da cópia legível deste formulário, cópia de um documento oficial que comprove a identidade do portador e dos bilhetes/vouchers emitidos. Esses documentos podem ser solicitados a qualquer momento pela Rede.</p>
+	<p>4. Caso os serviços sejam prestados em nome de outras pessoas que não o titular do cartão, seus nomes deverão ser listados abaixo para maior segurança do associado.</p>
+
+	<br>
+	<span class="importante">Importante: Esse procedimento só se aplica a transações efetuadas com cartões emitidos no Brasil</span>
+</div>
